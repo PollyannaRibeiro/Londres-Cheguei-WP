@@ -21,9 +21,9 @@
 	<header id="masthead" class="site-header" role="banner">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-4" id="logo">Logo</div>
-					<div class="col-5" id="menu-categories">Categories</div>
-					<div class="col-3" id="search-bar">Search Bar</div>
+					<div class="col-4 header-menu" id="logo-space">
+						<img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="center"/>
+					</div>
 				</div>
 			</div>
 	</header>
