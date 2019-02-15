@@ -32,6 +32,23 @@
   background-color: red;
 }
 
+
+/* Search bar */
+
 #search-bar{
   background-color: green;
+}
+
+.search-field {
+ 
+}
+.search-input{
+  width: 60%; 
+  margin-left: 15%;
+  margin-top: 1em;
+}
+
+.search-icon{
+  width: 20%;
+  margin-top: 1em;
 }

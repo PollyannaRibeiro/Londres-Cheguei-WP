@@ -32,6 +32,14 @@
 						<div class="row" id="pages">Pages</div>
 						<div class="row" id="menu-categories">Categories</div>
 					</div>
+					<div class="col-3 header-menu" id="search-bar">
+							<form role="search" class="search-form" method="get" action="http://localhost:1234/">
+								<div class="row search-field">
+									<input type="text" name="s" class="form-control search-input" placeholder="search">
+									<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
+								</div>
+							</form>
+					</div>
 				</div>
 			</div>
 	</header>
