@@ -1,5 +1,31 @@
-#logo{
+/* Header.php */
+
+.header-menu{
+  height: 5em;
+}
+
+.header-menu .row{
+  height: 2.5em;
+}
+
+#logo-space{
   background-color: aqua;
+  position: relative;
+  overflow: hidden;
+}
+
+#logo{
+  position: absolute;
+  text-align: center;
+  width: 10em;
+  max-width: 100%;
+
+
+
+}
+
+#pages{
+  background-color: blueviolet;
 }
 
 #menu-categories{
