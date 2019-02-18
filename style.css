@@ -4,44 +4,46 @@
   height: 5em;
 }
 
-.header-menu .row{
-  height: 2.5em;
-}
-
+/* Logo */
 #logo-space{
-  background-color: aqua;
   position: relative;
   overflow: hidden;
 }
 
 #logo{
-  position: absolute;
-  text-align: center;
   width: 10em;
   max-width: 100%;
+}
 
+/* Menu Header */
 
+#menu-header{
+  position: relative;
+  position: relative;
+  overflow: hidden;
 
 }
 
-#pages{
-  background-color: blueviolet;
+#menu-header ul {
+  display: flex;
+  font-size: 1em;
 }
 
-#menu-categories{
-  background-color: red;
+#menu-header ul li{
+  text-decoration: none;
+  display: inline-block;
+  padding: 1em;
 }
 
+#menu-header ul li a{
+  color: black;
+}
 
 /* Search bar */
 
 #search-bar{
-  background-color: green;
 }
 
-.search-field {
- 
-}
 .search-input{
   width: 60%; 
   margin-left: 15%;
@@ -51,4 +53,23 @@
 .search-icon{
   width: 20%;
   margin-top: 1em;
+}
+
+/* 
+=================================================== */
+
+/* Parallax */
+
+.parallax{
+  background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+#front-page-parallax{
+ background-image: url("https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+ height: 500px; 
+
 }
