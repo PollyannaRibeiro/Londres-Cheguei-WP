@@ -20,17 +20,43 @@ get_header(); ?>
 
 
 
+			<div class="main-wrap">
+				<main id="main" class="container-fluid" role="main">	
+					
+					<div class="row">
+						<div class="parallax" id="front-page-parallax">
+						<div>
+					</div>
 
-<div class="wrap">
-		<main id="main" class="site-main" role="main">
-
-		<div class="parallax" id="front-page-parallax"><div>
-
-
-		
-
-		</main><!-- #main -->
-	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
-
-<?php get_footer();
+					<div class="secondary ">
+						<ul class="card-columns" id="blog">	
+							<?php 
+								if( have_posts() ) { 
+										while( have_posts() ) {
+										the_post(); 
+								?>		
+							<li class="">
+								<div  class="">
+									<a class="a-post-blog" href="<?php the_permalink();?>">
+										<div class="card blog-card">
+											<div class="blog-thumb">	<?php the_post_thumbnail(); ?>	</div>
+											<div class="card-body">
+												<h1><?php the_title(); ?></h1>
+												<p class="card-text"><?php the_excerpt();?></p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</li>	
+							<?php 
+									}
+								}
+							?>
+						</ul>	
+					</div>	
+				</main><!-- #main -->
+				<?php get_sidebar(); ?>
+			</div><!-- .wrap -->
+		</div><!-- #content -->
+	</div><!-- .site-content-contain -->									
+<?php get_footer();?>
