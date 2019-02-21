@@ -53,6 +53,21 @@ get_header(); ?>
 								}
 							?>
 						</ul>	
+						<div class="previous-next container">
+							<div class="row justify-content-center">
+								<?php 
+									$previous = 
+										'<div class="float-left" id="previous">' .
+										'<i class="far fa-arrow-alt-circle-left "></i>' .
+												'</div>';
+									$next = 
+										'<div class="float-right" id="next">' . 
+										'<i class="far fa-arrow-alt-circle-right"></i>' .
+										'</div>';
+									posts_nav_link('<div class="" id="line"></div>',$previous,$next);  
+								?>
+							</div>
+						</div>
 					</div>	
 				</main><!-- #main -->
 				<?php get_sidebar(); ?>
