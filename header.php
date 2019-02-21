@@ -16,6 +16,10 @@
 
 
 <link rel="stylesheet" href="<?= $home;?>/style.css">
+<link rel="stylesheet" href="<?= $home;?>/assets/css/header.css">
+<link rel="stylesheet" href="<?= $home;?>/assets/css/index.css">
+<link rel="stylesheet" href="<?= $home;?>/assets/css/footer.css">
+
 
 <?php wp_head(); ?>
 </head>
@@ -25,12 +29,16 @@
 	<header id="masthead" class="site-header" role="banner">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-4 header-menu" id="logo-space">
-						<img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="center"/>
+					<div class="col-2 header-menu" id="logo-space">
+						<img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-right"/>
 					</div>
-					<div class="col-5 header-menu" >
-						<div class="row" id="pages">Pages</div>
-						<div class="row" id="menu-categories">Categories</div>
+					<div class="col-7 header-menu" id="menu-header">
+						<div class="float-right">
+							<?php wp_nav_menu(array(
+								'menu-header' => 'Menu Header', 
+
+							)); ?>
+						</div>	
 					</div>
 					<div class="col-3 header-menu" id="search-bar">
 							<form role="search" class="search-form" method="get" action="http://localhost:1234/">

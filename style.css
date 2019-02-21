@@ -1,75 +1,20 @@
-/* Header.php */
-
-.header-menu{
-  height: 5em;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-/* Logo */
-#logo-space{
-  position: relative;
-  overflow: hidden;
+html, body{
+  height: 100%;
 }
 
-#logo{
-  width: 10em;
-  max-width: 100%;
-}
 
-/* Menu Header */
-
-#menu-header{
-  position: relative;
-  position: relative;
-  overflow: hidden;
+.main-wrap{
+  min-height: 100%;
 
 }
 
-#menu-header ul {
-  display: flex;
-  font-size: 1em;
+#main{
+  overflow: auto;
+  padding-bottom: 100vh;
 }
 
-#menu-header ul li{
-  text-decoration: none;
-  display: inline-block;
-  padding: 1em;
-}
-
-#menu-header ul li a{
-  color: black;
-}
-
-/* Search bar */
-
-#search-bar{
-}
-
-.search-input{
-  width: 60%; 
-  margin-left: 15%;
-  margin-top: 1em;
-}
-
-.search-icon{
-  width: 20%;
-  margin-top: 1em;
-}
-
-/* 
-=================================================== */
-
-/* Parallax */
-
-.parallax{
-  background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
-
-}
-
-#front-page-parallax{
- background-image: url("https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
- height: 500px; 
-
-}
