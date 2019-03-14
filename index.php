@@ -23,11 +23,108 @@ get_header(); ?>
 			<div class="main-wrap">
 				<main id="main" class="container-fluid" role="main">	
 					
+					<div class="primary">
+						<!-- Main Post -->
+						<div class="row main-post">				
+							<?php 
+								$args_1 = array(
+									'cat' 			=> '1',
+									'posts_per_page'=> '1',
+									'page'          => '1'
+								);
+								$query_1 = new WP_Query($args_1);
+								while ($query_1->have_posts()){
+									$query_1->the_post();
+							?>
+							<div class="col-12 main-post-card">
+									<a class="main-post-link" href="<?php the_permalink();?>">
+										<div class="card main-post-card-content">
+											<div class="main-thumb">	<?php the_post_thumbnail(); ?>	</div>
+											<div class="card-img-overlay main-text">
+												<h1 class="card-title"><?php the_title(); ?></h1>
+											</div>							
+										</div>
+									</a>
+								</div>	
+							<?php 
+							}
+							?>	
+						</div>
+
+
+						<!-- Highlight Post -->
+						<div class="container-fluid highlight-post" id="highlight-tablet-computer">	
+							<ul class="row">			
+								<?php 
+									$args_2 = array(
+										'cat' 			=> 'test',
+										'posts_per_page'=> '3',
+										'page'          => '1'
+									);
+									$query_2 = new WP_Query($args_2);
+									while ($query_2->have_posts()){
+										$query_2->the_post()
+								?>
+								<li class="col-sm-4 highlight-post-card">
+										<a class="highlight-post-link" href="<?php the_permalink();?>">
+											<div class="card highlight-post-card-content">
+												<div class="highlight-thumb ">	<?php the_post_thumbnail(); ?>	</div>
+												<div class="card-img-overlay highlight-text">
+													<h1 class="card-title"><?php the_title(); ?></h1>
+												</div>							
+											</div>
+										</a>
+									</li>	
+								<?php 
+								}
+								?>	
+							</ul>
+						</div>
+
+
+
+						<!-- Highlight Post Phone Version -->
+
+						<div class="container-fluid highlight-post" id="highlight-phone">	
+							<ul class="row">			
+								<?php 
+									$args_2 = array(
+										'cat' 			=> 'test',
+										'posts_per_page'=> '2',
+										'page'          => '1'
+									);
+									$query_2 = new WP_Query($args_2);
+									while ($query_2->have_posts()){
+										$query_2->the_post()
+								?>
+								<li class="col-6 col-sm-6 highlight-post-card">
+										<a class="highlight-post-link" href="<?php the_permalink();?>">
+											<div class="card highlight-post-card-content">
+												<div class="highlight-thumb ">	<?php the_post_thumbnail(); ?>	</div>
+												<div class="card-img-overlay highlight-text">
+													<h1 class="card-title"><?php the_title(); ?></h1>
+												</div>							
+											</div>
+										</a>
+									</li>	
+								<?php 
+								}
+								?>	
+							</ul>
+						</div>
+
+
+
+					</div>
+
+					<!-- Parallax -->
+
 					<div class="row">
 						<div class="parallax" id="front-page-parallax">
 						<div>
 					</div>
 
+					<!-- Blog  -->
 					<div class="secondary ">
 						<ul class="card-columns" id="blog">	
 							<?php 
@@ -68,7 +165,15 @@ get_header(); ?>
 								?>
 							</div>
 						</div>
-					</div>	
+					</div>
+					
+					<!-- Parallax -->
+
+					<div class="row">
+						<div class="parallax" >
+						<div>
+					</div>
+
 				</main><!-- #main -->
 				<?php get_sidebar(); ?>
 			</div><!-- .wrap -->
