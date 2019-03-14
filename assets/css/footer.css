@@ -1,7 +1,25 @@
 #footer{
   background-color: bisque;
   position: relative;
-  height: 100px;
-  clear: both;
+  margin-left: 0;
+  width: 100vw;
+  /* min-height: 100px;
+  clear: both; */
 }
 
+
+.col-footer{
+  
+}
+
+.col-footer div div ul{
+  text-decoration: none;
+  list-style: none;
+  padding: 2rem;
+}
+
+.col-footer div div ul li a{
+  color: black;
+
+  
+}
