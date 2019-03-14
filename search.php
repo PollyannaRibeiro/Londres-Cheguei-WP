@@ -1,62 +1,64 @@
+
 <?php
-/**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
- * @version 1.0
- */
+/*
+Template Name: Search
+*/
+?>
+<?php get_header();?>
 
-get_header(); ?>
+<div class="main-wrap">
+<main class="container-fluid" role="main">
+  <div class="secondary ">
+    <h4 class="">Posts relacionados com: <?php the_search_query(); ?></h4>
+    <ul class="card-columns" id="search">	
+      <?php 
+        if( have_posts() ) { 
+            while( have_posts() ) {
+            the_post(); 
+        ?>		
+      <li class="">
+        <div  class="">
+          <a class="a-post-blog" href="<?php the_permalink();?>">
+            <div class="card blog-card">
+              <div class="blog-thumb">	<?php the_post_thumbnail(); ?>	</div>
+              <div class="card-body">
+                <h1><?php the_title(); ?></h1>
+                <p class="card-text"><?php the_excerpt();?></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </li>	
+      <?php 
+          }
+        }
+      ?>
+    </ul>	
+    <div class="previous-next container">
+      <div class="row justify-content-center">
+        <?php 
+          $previous = 
+            '<div class="float-left" id="previous">' .
+            '<i class="far fa-arrow-alt-circle-left "></i>' .
+                '</div>';
+          $next = 
+            '<div class="float-right" id="next">' . 
+            '<i class="far fa-arrow-alt-circle-right"></i>' .
+            '</div>';
+          posts_nav_link('<div class="" id="line"></div>',$previous,$next);  
+        ?>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="parallax" >
+    <div>
+  </div> -->
 
-<div class="wrap">
 
-	<header class="page-header">
-		<?php if ( have_posts() ) : ?>
-			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-		<?php else : ?>
-			<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
-		<?php endif; ?>
-	</header><!-- .page-header -->
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-		<?php
-		if ( have_posts() ) :
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+</main> 
+</div>
+<?php get_footer();?>
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/post/content', 'excerpt' );
-
-			endwhile; // End of the loop.
-
-			the_posts_pagination( array(
-				'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-				'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
-			) );
-
-		else : ?>
-
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
-			<?php
-				get_search_form();
-
-		endif;
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
-
-<?php get_footer();
