@@ -70,3 +70,45 @@ function arphabet_widgets_init() {
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 
+
+// Add new post type
+
+function cadastrando_post_type_news(){
+	
+	$news='News';
+	$newsDescription='Notícias relacionadas';
+
+
+	$newsLabels=array(
+		'name'=> $news,
+		'name_singular'=>$news,
+		'add_new_item'=> 'Adicionar '.$news,
+		'edit_item'=>'Editar '.$news
+
+	);
+
+	$supports=array(
+		'title',
+		'editor',
+		'author',
+		'thumbnail',
+		'comments',
+		
+
+	);
+	
+	$args=array(
+		'labels'=>$newsLabels,	
+		'public'=>true,
+		'description'=>$newsDescription,	
+		'menu_icon'=>'dashicons-admin-site',
+		'supports'=>$supports,
+		'taxonomies' => array('post_tag','category')
+		
+	);
+	
+	register_post_type('news', $args);
+}
+
+add_action('init','cadastrando_post_type_news');
+
