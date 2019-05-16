@@ -19,6 +19,15 @@ function blog_setup() {
 
 add_action( 'after_setup_theme', 'blog_setup' );
 
+// // Short title
+
+// function short_title($n) {
+// 	$title = get_the_title($post->ID);
+// 	$title = substr($title,0,$n);
+// 	echo $title;
+// }
+// add_filter( 'short_title' );
+
 
 // Read more and except length
 
