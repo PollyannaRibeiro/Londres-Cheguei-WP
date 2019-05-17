@@ -36,15 +36,21 @@ get_header(); ?>
 								while ($query_1->have_posts()){
 									$query_1->the_post();
 							?>
-							<div class="col-12 main-post-card">
+								<div class="col-12 main-post-card">
+							
 									<a class="main-post-link" href="<?php the_permalink();?>">
 										<div class="card main-post-card-content">
 											<div class="main-thumb">	<?php the_post_thumbnail(); ?>	</div>
 											<div class="card-img-overlay main-text">
-												<h1 class="card-title"><?php the_title(); ?></h1>
-											</div>							
+												<section><h1 class="card-title"><?php the_title(); ?></h1><section>
+												<section class="categories"><?php the_category(' '); ?></section>
+											</div>	
+																
 										</div>
+										
 									</a>
+									
+
 								</div>	
 							<?php 
 							}
