@@ -4,11 +4,10 @@ function addClass(){
   $('.thumb img').addClass('card-img');
   $('.highlight-thumb img').addClass('card-img img-fluid');
   $('.carousel-thumb img').addClass('d-block w-100');
-  $('body').scrollspy({ target: '#navbar-example' });
+  // $('body').scrollspy({ target: '#navbar-example' });
 
   
 	
   
-  console.log(elements);
 }
 addClass();

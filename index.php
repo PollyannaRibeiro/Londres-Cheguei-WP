@@ -119,12 +119,13 @@ get_header(); ?>
 
 					<!-- Parallax -->
 
-					<div class="row">
+					<!-- <div class="row">
 						<div class="parallax" id="front-page-parallax">
 						<div>
-					</div>
+					</div> -->
 					<!-- Blog  -->
 					<div class="secondary ">
+						<h1> Last Posts
 						<div class="row">
 							<div class="col-lg-10 col-sm-12" id="blog-col">
 
@@ -135,8 +136,8 @@ get_header(); ?>
 												while( have_posts() ) {
 												the_post(); 
 										?>		
-									<li class="">
-										<div  class="">
+									<li class="card-list">
+										<div  class="card-div">
 											<a class="a-post-blog" href="<?php the_permalink();?>">
 												<div class="card blog-card">
 													<div class="blog-thumb">	<?php the_post_thumbnail(); ?>	</div>
@@ -153,7 +154,20 @@ get_header(); ?>
 										}
 									?>
 								</ul>	
-								<div class="previous-next container">
+								
+
+								<?php
+								global $wp_query; // you can remove this line if everything works for you
+
+								// don't display the button if there are not enough posts
+								if (  $wp_query->max_num_pages > 1 )
+									echo '<div class="misha_loadmore"> LOAD MORE </div>'; // you can use <a> as well
+								?>
+								
+
+
+								
+								<!-- <div class="previous-next container">
 									<div class="row justify-content-center">
 										<?php 
 											$previous = 
@@ -167,7 +181,7 @@ get_header(); ?>
 											posts_nav_link('<div class="" id="line"></div>',$previous,$next);  
 										?>
 									</div>
-								</div>
+								</div> -->
 
 							</div>
 							<div class="col-lg-2" id="side-col">
