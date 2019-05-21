@@ -39,8 +39,6 @@ a .main-post-link{
 
 .main-text{
   background-color: rgb(0, 0, 0, 0.5);
-  
-
 }
 
 .main-text section h1{
@@ -72,71 +70,101 @@ a .main-post-link{
   padding-left: 0;
   padding-right: 0;
   position: relative;
-
+  text-decoration: none;
 }
 
 .highlight-post ul{
-  height: 10rem;
+  /* height: 10rem; */
   overflow: hidden;
   text-decoration: none;
   margin-right: 5%;
   margin-left: 5%;
 }
 
-.highlight-post-card{
-  
-  background-color: bisque;
+.highlight-post ul li{
+  list-style: none;
+}
+
+.first-highlight-post-cards .highlight-post-card-content{
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.highlight-post-card{ 
   position: relative;
   background-color: rgba(255, 255, 255, 0.9);
-
+  /* height: 30vh; */
 }
-.highlight-post-card-content{
-  
+
+.highlight-post-card-content{  
   border: none;
   width: 100%;
 }
 
-.highlight-post-link{
-}
-
 .highlight-thumb{
- overflow: hidden; 
- 
+  height: 20vh;
+  overflow: hidden; 
+  position: relative;
 }
 
 .highlight-thumb img{
-  /* position: relative;
-  display: flex;
-  min-width: 100%;
-  width: auto;
-  min-height: 30vh;
-  height: auto; */
- 
-  height: 200%;
-  width: 200%;
+  position: absolute;
+  display: block;
+  width: 30%;
+}
 
+.highlight-post-card-content .card-body {  
+  padding-top: 0;
+}
 
+.highlight-post-card-content .card-body a {  
+  text-decoration: none;
+}
+
+.highlight-post-link h1{
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 100;
+  margin: 10px;
+}
+
+a.highlight-post-link{
+  color: black;
 }
 
 .highlight-text{
-  background-color:rgba(255, 255, 255, 0.5) ;
-  margin-top: 0.3rem;
+  background-color:rgba(255, 255, 255, 0.6) ;
+  /* margin-top: 0.3rem; */
 }
 
 .highlight-text:hover{
-  margin-left: 0.3rem;
+  background-color: rgba(255, 255, 255, 0.7);
   transition: 50ms;
 }
 
-.highlight-text h1{
-  color: black;
-  font-size: 1.5rem;
-  font-weight: 100;
-  padding: 20px;
+
+.second-highlight-post-cards{
+
 }
 
+.second-highlight-post-cards .card-title{
+  
 
+}
 
+.second-highlight-post-cards .highlight-text{
+  background-color: rgb(0, 0, 0, 0.5);
+
+}
+
+.second-highlight-post-cards .highlight-text h1{
+  color: white;
+  font-weight: 500;
+  text-align: left;
+  position: relative;
+  font-size: 1.5rem;
+}
 
 
 
@@ -161,21 +189,23 @@ a .main-post-link{
   display: inline-block;
   column-break-inside: avoid;
 
-  @include media-breakpoint-only(sm) {
+  @include media-breakpoint-only(md) {
     column-count: 2;
   }
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
   }
 }
 
 #blog{
-  margin-top: 21vh;
+  margin-top: 0;
   margin-bottom: 0;
   padding-top: 1rem;
   padding-inline-start: 10px!important;
   padding-inline-end: 10px;
 }
+
+
 
 #blog li{
   margin-top: 10px;
@@ -188,8 +218,14 @@ a .main-post-link{
   font-size: 1rem;
 }
 
-.card-body h1{
+.blog-card h1{
   font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.blog-card p{
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 .blog-card{
@@ -245,7 +281,8 @@ a .main-post-link{
 /* Load more button */
 
 .misha_loadmore{
-	background-color: #ddd;
+  background-color: rgba(221, 221, 221, 0.2);
+  color: rgb(203, 203, 203);
 	border-radius: 2px;
 	display: block;
 	text-align: center;
@@ -255,7 +292,9 @@ a .main-post-link{
 	letter-spacing:1px;
 	cursor:pointer;
 	text-transform: uppercase;
-	padding: 10px 0;
+  padding: 10px 0;
+  margin: 0 30% 1rem 30%;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
 	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;  
 }
 .misha_loadmore:hover{
@@ -283,14 +322,38 @@ a .main-post-link{
     overflow: hidden;
   }
   
+
+
+  .highlight-thumb img{
+    min-width: 100vw;
+    min-height: auto;
+  }
+  
+  .highlight-text{
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .highlight-text h1{
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+
+
+
   #highlight-tablet-computer{
     display: none;
   }
+
 }
 
 @media only screen and (min-width: 701px){
   #highlight-phone{
     display: none;
+  }
+  .highlight-thumb img{
+    min-width: 33vw;
+    min-height: auto;
   }
   
 }
@@ -307,6 +370,12 @@ a .main-post-link{
 
   }
   
+}
+
+@media only screen and (max-width: 999px){
+  #side-col{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1200px){
@@ -343,9 +412,24 @@ a .main-post-link{
 
 @media only screen and (min-width: 1500px){
 
-  .primary, .secondary{
+  .secondary{
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
   }
+
+  .highlight-thumb img{
+    top:-5vh;
+  }
 }
+
+
+@media only screen and (min-width: 1000px){
+
+  .secondary{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+

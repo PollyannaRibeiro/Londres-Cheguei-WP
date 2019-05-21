@@ -63,7 +63,7 @@ get_header(); ?>
 							<ul class="row">			
 								<?php 
 									$args_2 = array(
-										'cat' 			=> 'test',
+										'cat' 			=> '12',
 										'posts_per_page'=> '3',
 										'page'          => '1'
 									);
@@ -71,7 +71,35 @@ get_header(); ?>
 									while ($query_2->have_posts()){
 										$query_2->the_post()
 								?>
-								<li class="col-sm-4 highlight-post-card">
+								<li class="col-sm-4 highlight-post-card first-highlight-post-cards border-light">
+										<a class="highlight-post-link" href="<?php the_permalink();?>">
+											<div class="card-img-top highlight-post-card-content">
+												<div class="highlight-thumb ">	<?php the_post_thumbnail(); ?>	</div>
+												<div class="card-body highlight-text">
+													<h1 class="card-title"><?php the_title(); ?></h1>
+													<p class="card-text"><?php the_excerpt();?></p>
+													<section class="categories"><?php the_category(' '); ?></section>
+												</div>							
+											</div>
+										</a>
+									</li>	
+								<?php 
+								}
+								?>	
+							</ul>
+
+							<ul class="row">			
+								<?php 
+									$args_2 = array(
+										'cat' 			=> '2',
+										'posts_per_page'=> '4',
+										'page'          => '1'
+									);
+									$query_2 = new WP_Query($args_2);
+									while ($query_2->have_posts()){
+										$query_2->the_post()
+								?>
+								<li class="col-sm-3 highlight-post-card second-highlight-post-cards">
 										<a class="highlight-post-link" href="<?php the_permalink();?>">
 											<div class="card highlight-post-card-content">
 												<div class="highlight-thumb ">	<?php the_post_thumbnail(); ?>	</div>
@@ -85,7 +113,12 @@ get_header(); ?>
 								}
 								?>	
 							</ul>
+
+
 						</div>
+
+						
+
 
 
 
@@ -107,8 +140,9 @@ get_header(); ?>
 										<a class="highlight-post-link" href="<?php the_permalink();?>">
 											<div class="card highlight-post-card-content">
 												<div class="highlight-thumb ">	<?php the_post_thumbnail(); ?>	</div>
-												<div class="card-img-overlay highlight-text">
+												<div class="card-body highlight-text">
 													<h1 class="card-title"><?php the_title(); ?></h1>
+													<p class="card-text"><?php the_excerpt();?></p>
 												</div>							
 											</div>
 										</a>
@@ -133,7 +167,7 @@ get_header(); ?>
 					<div class="secondary ">
 						<h1> Last Posts
 						<div class="row">
-							<div class="col-lg-10 col-sm-12" id="blog-col">
+							<div class=" col-lg-9 col-sm-12" id="blog-col">
 
 
 								<ul class="card-columns" id="blog">	
@@ -190,9 +224,10 @@ get_header(); ?>
 								</div> -->
 
 							</div>
-							<div class="col-lg-2" id="side-col">
+							<!-- 
+						</div> -->
+						<div class="col-lg-3 col-m-2" id="side-col">
 
-							</div>
 						</div>
 						
 					</div>

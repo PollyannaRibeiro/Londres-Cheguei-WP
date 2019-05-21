@@ -17,7 +17,7 @@ html, body{
 
 main{
   overflow: auto;
-  padding-bottom: 20vh;
+  /* padding-bottom: 20vh; */
 }
 
 body, main {
