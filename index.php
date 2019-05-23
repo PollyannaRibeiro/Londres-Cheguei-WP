@@ -231,15 +231,17 @@ get_header(); ?>
 						</div>
 						
 					</div>
-					
-					<!-- Parallax -->
-
-					<div class="row">
-						<div class="parallax" >
-						<div>
-					</div>
+				
 
 				</main><!-- #main -->
+
+				<!-- Parallax -->
+
+				
+				<div class="parallax" >
+				</div>
+				
+
 				<?php get_sidebar(); ?>
 			</div><!-- .wrap -->
 		</div><!-- #content -->
