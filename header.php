@@ -13,11 +13,10 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
 			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
 			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<!-- Materialize - Compiled and minified CSS			 -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-
 
 <link rel="stylesheet" href="<?= $home;?>/style.css">
 <link rel="stylesheet" href="<?= $home;?>/assets/css/header.css">
@@ -35,10 +34,10 @@
 <body>
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
-			<div class="container-fluid">
+			<div class="container-fluid" id=large-menu>
 				<div class="row">
 					<div class="col-2 header-menu" id="logo-space">
-						<img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-right"/>
+						<img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-left"/>
 					</div>
 
 					<div class="col-7 header-menu" id="menu-header">
@@ -68,6 +67,36 @@
 
 				</div>
 			</div>
+
+
+
+			<div class="container-fluid" id=tablet-menu>
+				<div class="row">
+					<div class="col-4 header-menu" id="logo-space">
+						<img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-left"/>
+					</div>
+
+					<div class="col-5 header-menu" id="menu-header">
+						<div class="float-right">
+							<?php wp_nav_menu(array(
+								'theme_location' => 'menu-header', 
+							)); ?>
+						</div>	
+					</div>
+					<div class="col-3 header-menu" id="search-bar">
+							<form role="search" class="search-form" method="get" action="http://localhost:1234/">
+								<div class="row search-field">
+									<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
+									<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
+								</div>
+							</form>
+					</div>
+				</div>
+			</div>
+
+
+
+
 			<nav class="navbar navbar-light bg-light" id=burguer-menu>
 				<a class="navbar-brand" href="#"><img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-right"/></a>
 				<button class="navbar-toggler" 
