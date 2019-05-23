@@ -1,3 +1,12 @@
+// change the hamburguer menu icon
+
+$(function() {
+  $('#ChangeToggle').click(function() {
+    $('#navbar-hamburger').toggleClass('hidden');
+    $('#navbar-close').toggleClass('hidden');  
+  });
+});
+
 function addClass(){
 
   $('.blog-thumb img').addClass('card-img-top img-fluid');

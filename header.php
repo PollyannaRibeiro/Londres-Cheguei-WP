@@ -68,6 +68,38 @@
 
 				</div>
 			</div>
+			<nav class="navbar navbar-light bg-light" id=burguer-menu>
+				<a class="navbar-brand" href="#"><img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-right"/></a>
+				<button class="navbar-toggler" 
+					type="button" data-toggle="collapse" 
+					data-target="#navbarTogglerDemo02" 
+					aria-controls="navbarTogglerDemo02" 
+					aria-expanded="false" 
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+						<li class="nav-item active">
+							<?php wp_nav_menu(array(
+									'theme_location' => 'menu-header' 
+								)); ?>
+						<li>
+						<li>
+							<?php wp_nav_menu(array(
+									'theme_location' => 'menu-categories'
+								)); ?>
+						<li>
+					</ul>
+					<form role="search" class="search-form" method="get" action="http://localhost:1234/">
+						<div class="row search-field">
+							<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
+							<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
+						</div>
+					</form>
+				</div>
+			</nav>
 	</header>
 
 
