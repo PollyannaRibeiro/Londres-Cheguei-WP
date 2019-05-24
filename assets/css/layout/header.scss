@@ -1,0 +1,186 @@
+
+
+
+/* Header.php */
+
+.header-menu{
+  height: 5em;
+}
+
+/* Logo */
+#logo-space{
+  position: relative;
+  overflow: hidden;
+}
+
+#logo{
+  width: 10em;
+  max-width: 100%;
+}
+
+/* Menu Header */
+
+#menu-header{
+  position: relative;
+  overflow: hidden;
+
+  ul {
+    display: flex;
+    @include font-style(1.4em);
+
+    li{
+      text-decoration: none;
+      display: inline-block;
+      padding: 1em;
+
+      a{
+        color: black;
+      }
+    }
+  }
+  @media only screen and (max-width: 767px){
+    display: none;
+  }
+}
+
+/* Menu Categories */
+
+#menu-cat{
+  border-top: 1px solid black;
+  position: relative;
+  position: relative;
+  overflow: hidden;
+  margin-right: 5%;
+  width: 80vw;
+  height: 4rem;
+
+  ul {
+    display: flex;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 0;
+
+    li{
+      @include font-style(1.5rem, 300);
+      position: relative;
+      text-decoration: none;
+      display: inline-block;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin: 10px 1rem;
+
+      a{
+        color: black;
+      }
+
+      a:hover{
+        color: rgba(0, 0, 0, 0.5)
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+      display: none;
+  }
+}
+
+/* Search bar */
+
+#search-bar{
+  @media only screen and (max-width: 767px){
+      position: relative;
+      margin-left: 50%;
+      float: right;
+  }
+}
+
+.search-input{
+  width: 60%; 
+  margin-left: 15%;
+  margin-top: 1em;
+}
+
+.search-icon{
+  width: 20%;
+  margin-top: 1em;
+}
+
+.search-field .form-control{
+  width: 60%;
+}
+
+/* Nav bar - burger menu */
+
+.navbar{
+  margin-bottom: -4px;
+  z-index: 999;
+}
+
+.navbar-brand {
+  padding: 0;
+
+  #logo{
+    width: auto;
+    height: 9vh;
+  }
+}
+
+.navbar-nav{
+  padding-top: 10vh;
+  font-size: 1.5rem;
+
+  li{
+    list-style: none;
+    padding: 0.5rem 0;
+
+    a {
+      color: black;
+    }
+  }
+}
+
+.navbar-toggler{
+  margin-top: 15px;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled){
+  float: right;
+}
+
+/* Defining Responsivite */
+
+#burger-menu{
+  @media only screen and (max-width: 767px){
+    display: inherit;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 999px){
+    display: none;
+  }
+  @media only screen and (min-width: 1000px){
+    display: none;
+  }
+}
+
+#tablet-menu{
+  @media only screen and (max-width: 767px){
+    display: none;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 999px){
+    display: inherit;
+  }
+  @media only screen and (min-width: 1000px){
+    display: none;
+  }
+}
+
+#large-menu{
+  @media only screen and (max-width: 767px){
+    display: none;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 999px){
+    display: none;
+  }
+  @media only screen and (min-width: 1000px){
+    display: inherit;
+  }
+}

@@ -1,0 +1,10 @@
+
+$default-font: 'Roboto', sans-serif;
+$condensed-font: 'Roboto Condensed', sans-serif;
+
+
+@mixin font-style($size:1rem, $weight: 400, $family:$default-font){
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}
