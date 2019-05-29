@@ -1,0 +1,115 @@
+/* blog */
+
+.card-body{
+  position: relative;
+}
+
+.card-columns {
+  display: inline-block;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  
+  @include media-breakpoint-only(sm) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(md) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+}
+
+#blog, #blog li div a{
+  list-style: none;
+  color: black;
+}
+
+#blog{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-inline-start: 10px!important;
+  padding-inline-end: 10px;
+
+  @media only screen and (max-width: 850px){
+    width: 98vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @media only screen and (max-width:575px){
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+}
+
+#blog-col{
+  @media only screen and (max-width: 999px){
+    padding-left: 0px;
+  }
+}
+
+.blog-card {
+  border: 1px solid rgba(0,0,0,.125);
+  position: relative;
+
+  &:hover {
+    border: 1px solid rgba(0,0,0,0);
+  }
+
+  h1{
+    @include font-style(1.3rem);
+    text-align: center;
+
+    @media only screen and (max-width:575px){
+      @include font-style(1.8rem);
+    }
+    @media only screen and (min-width: 576px) and (max-width:767px){
+      @include font-style(1.6rem);
+    }
+    @media only screen and (min-width: 768px) and (max-width:991px){
+      @include font-style(1.4rem);
+    }
+    @media only screen and (min-width: 992px) and (max-width:1199px){
+      @include font-style(1.5rem);
+    }
+  }
+
+  p{
+    @include font-style(1.2rem, 300);
+
+    @media only screen and (max-width:575px){
+      @include font-style(1.4rem, 300);
+    }
+  }
+}
+
+.blog-thumb{
+  position: relative;
+
+  @media only screen and (max-width: 700px){
+    max-height:30vh ;
+    overflow: hidden;
+  }
+
+  img{
+    width:100%;
+    height: auto;
+    max-height: 100%;
+
+    &:hover{
+      transform: scale(1.01);
+      transition: 300ms;
+    }
+  }
+}
+

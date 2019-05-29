@@ -25,10 +25,10 @@ Template Name: Single
 				</section>
 				
 				<div class="row">
-					<div class="col-6 thumb-single-page"><?php the_post_thumbnail(); ?></div>
+					<div class="col-12 thumb-single-page"><?php the_post_thumbnail(); ?></div>
 				</div>
 
-				<span class="info-single-post">
+				<span class="info-single-post float-right">
 					<p><?php the_date();?></p>
 					<p><?php _e( 'Postado por: ', 'textdomain' ); the_author_posts_link();?></p>
 				</span>

@@ -1,0 +1,86 @@
+.main-article{
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px inset;
+
+  .title-single-page{
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    h1{
+      padding: 1rem 1rem 1rem 5rem;
+      @include font-style(3rem, 400, $condensed-font);
+    }
+  }
+
+  .thumb-single-page{
+    z-index: -1;
+    margin-top: -7rem;
+    margin-bottom: 1rem;
+    max-height: 30vh;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+}
+
+
+.content-single-post{
+  margin: 3rem 10%;
+  text-align: justify;
+  @include font-style(1.5rem, 300);
+ 
+  i{
+    @include font-style(1.5rem, 300);
+    font-style: italic;
+  }
+
+  b{
+    @include font-style(1.5rem, 500);
+  }
+
+  strong{
+    @include font-style(1.5rem, 700);
+  }
+}
+
+.info-single-post {
+  @include font-style(1.2rem ,100);
+  text-align: right;
+  p{
+    margin-bottom: 0.1rem;
+    color: rgb(133, 133, 133);
+    
+    a{
+      color: rgb(106, 106, 106);
+      text-decoration: underline;
+    }
+  }
+}
+
+// Category and tag
+
+.categories-single-post, tags-single-post{
+  @include font-style(1.5rem, 300);
+  a{
+    color: rgb(142, 174, 216);
+  }
+}
+
+// Comments
+
+.comments-format{
+  padding: 1rem;
+  margin:  3rem 10%;
+  @include font-style(1.5rem, 300);
+}
+
+// Side Bar
+
+#single-page-side-content{
+  background-color: rgb(233, 233, 233);
+}

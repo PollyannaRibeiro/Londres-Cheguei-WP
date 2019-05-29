@@ -1,0 +1,10 @@
+/* sidebar */
+
+#side-col{
+  background-color: gray;
+  margin-top: 0;
+
+  @media only screen and (max-width: 990px){
+    display: none;
+  }
+}

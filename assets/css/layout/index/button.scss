@@ -1,0 +1,43 @@
+/* Load more button */
+
+.misha_loadmore{
+  background-color: rgba(221, 221, 221, 0.2);
+  color: rgb(203, 203, 203);
+	border-radius: 2px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 800;
+	letter-spacing:1px;
+	cursor:pointer;
+	text-transform: uppercase;
+  padding: 10px 0;
+  margin: 0 30% 1rem 30%;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out;  
+}
+.misha_loadmore:hover{
+	background-color: #767676;
+	color: #fff;
+}
+
+/* Previous - Next Arrows */
+
+.previous-next{
+  margin-top: 0;
+  height: 4rem;
+}
+
+#previous, #next{
+  font-size: 2rem;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+  padding: 10px;
+  color: #a4a4a4;
+}
+
+#line{
+  text-align: center;
+  font-size: 0.5rem;
+}

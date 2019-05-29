@@ -1,0 +1,190 @@
+/* Highlight Post */
+
+.highlight-post{
+  margin-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  text-decoration: none;
+
+  ul{
+    overflow: hidden;
+    text-decoration: none;
+    margin-right: 5%;
+    margin-left: 5%;
+
+    li{
+      list-style: none;
+    }
+  }
+
+  .categories a{
+    padding: 0.3rem 0.5rem;
+    margin: 0 0.1rem 0.3rem 0.1rem;
+    border-radius: 15px;
+    background-color: rgba(118, 118, 118, 0.2);
+    @include font-style(1.4rem, 200, $condensed-font);
+    float:right;
+  }
+
+  @media only screen and (min-width: 1400px){
+    width: 85%;
+  }
+}
+
+.highlight-post-card{ 
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  @media only screen and (max-width: 1200px){
+    padding: 5px;
+  }
+
+  a{
+    color: black;
+    .highlight-post-card-content{  
+      border: none;
+      width: 100%;
+
+      .card-body {  
+        padding-top: 0;
+        a {  
+          text-decoration: none;
+        }
+      }
+    }
+
+    .highlight-text{
+      h1{
+        @media only screen and (max-width: 700px){
+          @include font-style (1.5rem, 400, $condensed-font);
+        }
+      } 
+    }
+  }
+
+  .highlight-thumb{
+    height: 20vh;
+    overflow: hidden; 
+    position: relative;
+
+    img{
+      position: absolute;
+      display: block;
+      height: auto;
+
+      @media only screen and (max-width: 700px){
+        min-width: 50vw;
+        min-height: 20vh;
+      }
+    }
+  }
+}
+
+.first-highlight-post-cards {
+
+  .highlight-post-card-content{
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .highlight-thumb img{
+    min-width: 33vw;
+    min-height: 20vh;
+  }
+
+  h1{
+    @include font-style(2rem, 400, $condensed-font);
+
+    @media only screen and (max-width:990px){
+      font-size: 1.7rem;
+
+    }
+  }
+  p{
+    @include font-style(1.5rem, 300);
+
+    @media only screen and (max-width:990px){
+      font-size: 1.2rem; 
+    }
+  }
+}
+
+.second-highlight-post-cards{
+  text-align: center;
+  position: relative;
+
+  .highlight-thumb img{
+    min-width: 25vw;
+    height: auto;
+    min-height: 20vh;
+  }
+
+  .highlight-text{
+    background-color: rgba(0, 0, 0, 0.5);
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.4);
+      transition: 500ms; 
+    }
+  }
+
+  h1{
+    @include font-style(2rem, 400, $condensed-font);
+    color: white;
+
+    @media only screen and (max-width:990px){
+      font-size: 1.5rem; 
+    }
+    
+  }
+}
+
+// Read more link
+
+.read-more{
+  font-weight: 100;
+}
+
+// mobile screen
+
+#highlight-phone .highlight-thumb img{
+  width: 50vw;
+}
+
+// Responsivite
+
+#highlight-phone{
+  @media only screen and (min-width: 701px){
+    display: none;
+  }  
+}
+
+#highlight-tablet-computer{
+
+  @media only screen and (max-width: 700px){
+    display: none;
+  } 
+
+  @media only screen and (min-width: 1400px){
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%; 
+  }
+}
+
+.secondary{
+
+  @media only screen and (min-width: 1000px) and (max-width:1399px){
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  @media only screen and (min-width: 1400px){
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+}

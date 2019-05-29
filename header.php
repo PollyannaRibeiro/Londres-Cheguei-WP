@@ -18,13 +18,19 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
 			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-<link rel="stylesheet" href="<?= $home;?>/style.css">
-<link rel="stylesheet" href="<?= $home;?>/assets/css/header.css">
-<link rel="stylesheet" href="<?= $home;?>/assets/css/index.css">
-<link rel="stylesheet" href="<?= $home;?>/assets/css/footer.css">
+<!-- font			 -->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+
+
+
+<link rel="stylesheet" href="<?= $home;?>/assets/css/style.css">
+<!-- <link rel="stylesheet" href="<?= $home;?>/assets/css/header.css"> -->
+<!-- <link rel="stylesheet" href="<?= $home;?>/assets/css/index.css"> -->
+<!-- <link rel="stylesheet" href="<?= $home;?>/assets/css/footer.css"> -->
 <link rel="stylesheet" href="<?= $home;?>/assets/css/category.css">
 <link rel="stylesheet" href="<?= $home;?>/assets/css/search.css">
-<link rel="stylesheet" href="<?= $home;?>/assets/css/single.css">
+<!-- <link rel="stylesheet" href="<?= $home;?>/assets/css/single.css"> -->
 
 
 
@@ -97,7 +103,7 @@
 
 
 
-			<nav class="navbar navbar-light bg-light" id=burguer-menu>
+			<nav class="navbar navbar-light" id=burger-menu>
 				<a class="navbar-brand" href="#"><img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-right"/></a>
 				<button class="navbar-toggler" 
 					type="button" data-toggle="collapse" 
