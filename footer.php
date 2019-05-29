@@ -4,6 +4,8 @@
  */
 ?>
 
+<?php $home=get_template_directory_uri();?>
+
 <?php wp_footer(); ?>
 
 	<footer id="footer" class="page-footer" role="contentinfo">
@@ -22,13 +24,23 @@
 						)); ?>
 					</div>	
 				</div>
+				<div class="col-6 social-media">
+						<ul class="float-right">
+							<li><a href=""><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/facebook.png" alt="" srcset=""></a></li>
+							<li><a href=""><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/facebook.png" alt="" srcset=""></a></li>
+							<li><a href=""><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/facebook.png" alt="" srcset=""></a></li>
+							<li><a href=""><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/facebook.png" alt="" srcset=""></a></li>
+							<li><a href=""><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/facebook.png" alt="" srcset=""></a></li>
+							<li><a href=""><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/facebook.png" alt="" srcset=""></a></li>
+						</ul>
+				</div>
 			</div>
 		</div>
 	</footer>	
 </div><!-- #page -->
 
 
-<?php $home=get_template_directory_uri();?>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="<?= $home;?>/assets/js/index.js"></script>
 <script src="<?= $home;?>/assets/myloadmore.js"></script>
