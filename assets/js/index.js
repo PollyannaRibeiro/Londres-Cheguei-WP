@@ -15,7 +15,7 @@ function addClass(){
   $('.carousel-thumb img').addClass('d-block w-100');
   // $('body').scrollspy({ target: '#navbar-example' });
 
-  // $('.highlight-thumb img').addClass('card-img img-fluid');
+  $('.gallery-item .gallery-icon img').addClass('img-fluid');
 
 	
   

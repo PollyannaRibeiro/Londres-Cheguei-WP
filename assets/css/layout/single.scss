@@ -1,7 +1,7 @@
 .main-article{
   margin-top: 1rem;
   padding-bottom: 3rem;
-  border-bottom: 1px inset;
+  width: 100%;
 
   .title-single-page{
     z-index: 2;
@@ -9,7 +9,11 @@
 
     h1{
       padding: 1rem 1rem 1rem 5rem;
-      @include font-style(3rem, 400, $condensed-font);
+      @include font-style(2.5rem, 400, $condensed-font);
+      
+      @media only screen and (min-width:880px){
+        @include font-style(3rem, 400, $condensed-font);
+      }
     }
   }
 
@@ -28,6 +32,11 @@
   }
 }
 
+// Images from the WP galleries
+.gallery-item img{
+  border: none!important;
+  padding: 1px;
+}
 
 .content-single-post{
   margin: 3rem 10%;
@@ -65,6 +74,7 @@
 // Category and tag
 
 .categories-single-post, tags-single-post{
+  margin-left: 3vw;
   @include font-style(1.5rem, 300);
   a{
     color: rgb(142, 174, 216);
@@ -76,11 +86,26 @@
 .comments-format{
   padding: 1rem;
   margin:  3rem 10%;
+  border-top: 1px inset;
   @include font-style(1.5rem, 300);
 }
 
-// Side Bar
-
 #single-page-side-content{
-  background-color: rgb(233, 233, 233);
+  background-color: rgba(160, 160, 160, 0.3);
+}
+
+#single-page{
+  @media only screen and (min-width:200px) and (max-width:700px){
+    display: none!important;
+  }
+  @media only screen and (min-width:1400px) {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+#single-page-phone{
+  @media only screen and (min-width:701px){
+    display: none;
+  }
 }

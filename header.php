@@ -21,18 +21,9 @@
 <!-- font			 -->
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 
-
-
-
-<link rel="stylesheet" href="<?= $home;?>/assets/css/style.css">
-<!-- <link rel="stylesheet" href="<?= $home;?>/assets/css/header.css"> -->
-<!-- <link rel="stylesheet" href="<?= $home;?>/assets/css/index.css"> -->
-<!-- <link rel="stylesheet" href="<?= $home;?>/assets/css/footer.css"> -->
+<link rel="stylesheet" href="<?= $home;?>/style.css">
 <link rel="stylesheet" href="<?= $home;?>/assets/css/category.css">
 <link rel="stylesheet" href="<?= $home;?>/assets/css/search.css">
-<!-- <link rel="stylesheet" href="<?= $home;?>/assets/css/single.css"> -->
-
-
 
 <?php wp_head(); ?>
 </head>
@@ -53,6 +44,7 @@
 							)); ?>
 						</div>	
 					</div>
+					<!-- search bar -->
 					<div class="col-3 header-menu" id="search-bar">
 							<form role="search" class="search-form" method="get" action="http://localhost:1234/">
 								<div class="row search-field">
@@ -63,6 +55,7 @@
 					</div>
 				</div>
 				<div class="row">
+					<!-- menu categories -->
 					<div class="col-12" id="menu-cat">
 						<div class="float-left">
 							<?php wp_nav_menu(array(
@@ -73,9 +66,7 @@
 
 				</div>
 			</div>
-
-
-
+			<!-- tablet menu -->
 			<div class="container-fluid" id=tablet-menu>
 				<div class="row">
 					<div class="col-4 header-menu" id="logo-space">
@@ -99,10 +90,7 @@
 					</div>
 				</div>
 			</div>
-
-
-
-
+			<!-- Burger menu -->
 			<nav class="navbar navbar-light" id=burger-menu>
 				<a class="navbar-brand" href="#"><img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-right"/></a>
 				<button class="navbar-toggler" 
@@ -136,8 +124,6 @@
 				</div>
 			</nav>
 	</header>
-
-
 
 	<div class="site-content-contain">
 		<div id="content" class="site-content">
