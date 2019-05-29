@@ -1,24 +1,10 @@
 <?php
 /**
  * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Seventeen
- * @since 1.0
  * @version 1.0
  */
 
 get_header(); ?>
-
-
-
 
 			<div class="main-wrap">
 				<main id="main" class="container-fluid" role="main">	
@@ -36,28 +22,21 @@ get_header(); ?>
 								while ($query_1->have_posts()){
 									$query_1->the_post();
 							?>
-								<div class="col-12 main-post-card">
-							
+								<div class="col-12 main-post-card">					
 									<a class="main-post-link" href="<?php the_permalink();?>">
 										<div class="card main-post-card-content">
 											<div class="main-thumb">	<?php the_post_thumbnail(); ?>	</div>
 											<div class="card-img-overlay main-text">
 												<section><h1 class="card-title"><?php the_title(); ?></h1><section>
 												<section class="categories"><?php the_category(' '); ?></section>
-											</div>	
-																
-										</div>
-										
+											</div>				
+										</div>									
 									</a>
-									
-
 								</div>	
 							<?php 
 							}
 							?>	
 						</div>
-
-
 						<!-- Highlight Post -->
 						<div class="container-fluid highlight-post" id="highlight-tablet-computer">	
 							<ul class="row">			
@@ -103,7 +82,7 @@ get_header(); ?>
 										<a class="highlight-post-link" href="<?php the_permalink();?>">
 											<div class="card highlight-post-card-content">
 												<div class="highlight-thumb ">	<?php the_post_thumbnail(); ?>	</div>
-												<div class="card-img-overlay highlight-text">
+												<div class="card-img-overlay highlight-text align-middle">
 													<h1 class="card-title"><?php the_title(); ?></h1>
 												</div>							
 											</div>
@@ -129,24 +108,28 @@ get_header(); ?>
 								<?php 
 									$args_2 = array(
 										'cat' 			=> 'test',
-										'posts_per_page'=> '2',
+										'posts_per_page'=> '4',
 										'page'          => '1'
 									);
 									$query_2 = new WP_Query($args_2);
 									while ($query_2->have_posts()){
 										$query_2->the_post()
 								?>
-								<li class="col-6 col-sm-6 highlight-post-card">
-										<a class="highlight-post-link" href="<?php the_permalink();?>">
-											<div class="card highlight-post-card-content">
-												<div class="highlight-thumb ">	<?php the_post_thumbnail(); ?>	</div>
-												<div class="card-body highlight-text">
-													<h1 class="card-title"><?php the_title(); ?></h1>
-													<p class="card-text"><?php the_excerpt();?></p>
-												</div>							
-											</div>
-										</a>
-									</li>	
+
+								<li class="col-sm-6 col-6 highlight-post-card second-highlight-post-cards">
+									<a class="highlight-post-link" href="<?php the_permalink();?>">
+										<div class="card highlight-post-card-content">
+											<div class="highlight-thumb ">	<?php the_post_thumbnail(); ?>	</div>
+											<div class="card-img-overlay highlight-text">
+												<h1 class="card-title"><?php the_title(); ?></h1>
+											</div>							
+										</div>
+									</a>
+								</li>	
+
+
+
+					
 								<?php 
 								}
 								?>	
