@@ -7594,16 +7594,18 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0;
   padding: 0; }
 
-html, body {
-  height: 100%; }
+html {
+  min-height: 100%;
+  position: relative; }
+  html body {
+    margin-bottom: 20vh; }
 
 .main-wrap {
   min-height: 100%;
   overflow: hidden; }
 
 main {
-  overflow: auto;
-  /* padding-bottom: 20vh; */ }
+  overflow: auto; }
 
 body, main {
   overflow-x: hidden;
@@ -8118,7 +8120,10 @@ body, main {
 
 #footer {
   background-color: bisque;
-  position: relative;
+  position: absolute;
+  height: 20vh;
+  bottom: 0;
+  left: 0;
   margin-left: 0;
   width: 100vw; }
   #footer ul {

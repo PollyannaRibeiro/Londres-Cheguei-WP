@@ -6,7 +6,7 @@ Template Name: Author
 <?php get_header();?>
 
 <div class="main-wrap">
-<main class="container-fluid" role="main">
+<main class="container-fluid" id="author-page" role="main">
   <div class="secondary ">
     <h4 class="category-title">Texts by <?php wp_list_authors(); ?></h4>
     <ul class="card-columns" id="categories">	

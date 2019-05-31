@@ -8,7 +8,7 @@
 
 <?php wp_footer(); ?>
 
-	<footer id="footer" class="page-footer" role="contentinfo">
+	<footer id="footer" class="footer mt-auto py-3" role="contentinfo">
 			<div class="row">
 				<div class="col-3 col-footer">
 					<div class="float-right">

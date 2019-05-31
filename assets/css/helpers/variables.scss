@@ -2,6 +2,8 @@
 $default-font: 'Roboto', sans-serif;
 $condensed-font: 'Roboto Condensed', sans-serif;
 
+$height-footer: 20vh;
+
 
 @mixin font-style($size:1rem, $weight: 400, $family:$default-font){
   font-size: $size;

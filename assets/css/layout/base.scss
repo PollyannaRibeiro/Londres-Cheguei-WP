@@ -3,11 +3,14 @@
   padding: 0;
 }
 
-html, body{
-  height: 100%;
 
+html{
+  min-height: 100%;
+  position: relative;
+  body{
+    margin-bottom: $height-footer; //setting the footer in the bottom
+  }
 }
-
 
 .main-wrap{
   min-height: 100%;
@@ -17,7 +20,8 @@ html, body{
 
 main{
   overflow: auto;
-  /* padding-bottom: 20vh; */
+  // flex: 1 0 auto;
+  
 }
 
 body, main {
@@ -25,3 +29,8 @@ body, main {
   font-family: $default-font;
 
 }
+
+// #author-page, #category-page{
+//   padding-bottom: 20vh; 
+
+// }

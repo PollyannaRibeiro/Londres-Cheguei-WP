@@ -1,6 +1,9 @@
 #footer{
   background-color: bisque;
-  position: relative;
+  position: absolute;
+  height: $height-footer; //setting the footer in the bottom
+  bottom: 0;
+  left: 0;
   margin-left: 0;
   width: 100vw;
 
