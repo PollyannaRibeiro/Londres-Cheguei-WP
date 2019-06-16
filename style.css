@@ -7805,7 +7805,7 @@ body, main {
     @media only screen and (max-width: 750px) {
       .main-text section h1 {
         font-size: 2.4rem; } }
-  .main-text .categories a {
+  .main-text a.categories {
     color: black;
     background-color: #fff;
     margin-top: 9vh;
@@ -7820,10 +7820,10 @@ body, main {
     float: right;
     display: flex; }
     @media only screen and (max-width: 750px) {
-      .main-text .categories a {
+      .main-text a.categories {
         font-size: 1rem; } }
     @media only screen and (max-width: 999px) {
-      .main-text .categories a {
+      .main-text a.categories {
         margin-top: 4vh; } }
 
 /* Highlight Post */
@@ -7840,7 +7840,7 @@ body, main {
     margin-left: 5%; }
     .highlight-post ul li {
       list-style: none; }
-  .highlight-post .categories a {
+  .highlight-post a.categories {
     padding: 0.3rem 0.5rem;
     margin: 0 0.1rem 0.3rem 0.1rem;
     border-radius: 15px;

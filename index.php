@@ -28,7 +28,13 @@ get_header(); ?>
 											<div class="main-thumb">	<?php the_post_thumbnail(); ?>	</div>
 											<div class="card-img-overlay main-text">
 												<section><h1 class="card-title"><?php the_title(); ?></h1><section>
-												<section class="categories"><?php the_category(' '); ?></section>
+												<section>
+													<?php 
+														foreach((get_the_category()) as $category) { 
+															echo '<a class="categories" href="' . get_category_link( $category->term_id ) . '">' . $category->cat_name . '</a>';
+														} 
+													?>
+												</section>
 											</div>				
 										</div>									
 									</a>
@@ -57,7 +63,13 @@ get_header(); ?>
 												<div class="card-body highlight-text">
 													<h1 class="card-title"><?php the_title(); ?></h1>
 													<p class="card-text"><?php the_excerpt();?></p>
-													<section class="categories"><?php the_category(' '); ?></section>
+													<section>
+													<?php 
+														foreach((get_the_category()) as $category) { 
+															echo '<a class="categories" href="' . get_category_link( $category->term_id ) . '">' . $category->cat_name . '</a>';
+														} 
+													?>
+												</section>
 												</div>							
 											</div>
 										</a>
@@ -210,6 +222,17 @@ get_header(); ?>
 							<!-- 
 						</div> -->
 						<div class="col-lg-3 col-m-2" id="side-col">
+
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<ins class="adsbygoogle"
+									style="display:block"
+									data-ad-format="fluid"
+									data-ad-layout-key="-6s+eg+1g-3d+2z"
+									data-ad-client="ca-pub-3886723811120568"
+									data-ad-slot="2910623932"></ins>
+							<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
 
 						</div>
 						
