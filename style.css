@@ -7742,15 +7742,17 @@ body, main {
   #tablet-menu {
     display: none; } }
 
-@media only screen and (max-width: 767px) {
-  #large-menu {
-    display: none; } }
-@media only screen and (min-width: 768px) and (max-width: 999px) {
-  #large-menu {
-    display: none; } }
-@media only screen and (min-width: 1000px) {
-  #large-menu {
-    display: block; } }
+#large-menu {
+  border-top: 1px solid #dcdcdc4d; }
+  @media only screen and (max-width: 767px) {
+    #large-menu {
+      display: none; } }
+  @media only screen and (min-width: 768px) and (max-width: 999px) {
+    #large-menu {
+      display: none; } }
+  @media only screen and (min-width: 1000px) {
+    #large-menu {
+      display: block; } }
 
 /* Main Post Link */
 .main-post {
@@ -8063,7 +8065,7 @@ body, main {
 
 /* sidebar */
 #side-col {
-  background-color: gray;
+  background-color: #dcdcdc4d;
   margin-top: 0; }
   @media only screen and (max-width: 990px) {
     #side-col {
@@ -8119,7 +8121,7 @@ body, main {
   font-size: 0.5rem; }
 
 #footer {
-  background-color: bisque;
+  background-color: #dcdcdc4d;
   position: absolute;
   height: 20vh;
   bottom: 0;
@@ -8250,12 +8252,12 @@ body, main {
       color: #6a6a6a;
       text-decoration: underline; }
 
-.categories-single-post, tags-single-post {
+.categories-single-post, .tags-single-post {
   margin-left: 3vw;
   font-size: 1.5rem;
   font-weight: 300;
   font-family: "Roboto", sans-serif; }
-  .categories-single-post a, tags-single-post a {
+  .categories-single-post a, .tags-single-post a {
     color: #8eaed8; }
 
 .comments-format {
@@ -8267,7 +8269,7 @@ body, main {
   font-family: "Roboto", sans-serif; }
 
 #single-page-side-content {
-  background-color: rgba(160, 160, 160, 0.3); }
+  background-color: #dcdcdc4d; }
 
 @media only screen and (min-width: 200px) and (max-width: 700px) {
   #single-page {
@@ -8297,6 +8299,26 @@ body, main {
   font-size: 1rem; }
 
 .category-title {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: rgba(116, 116, 116, 0.194); }
+
+#tag {
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-inline-start: 10px !important;
+  padding-inline-end: 10px; }
+
+#tag li {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+#tag, #tag li div a {
+  list-style: none;
+  color: black;
+  font-size: 1rem; }
+
+.tag-title {
   padding: 1rem;
   font-size: 2rem;
   background-color: rgba(116, 116, 116, 0.194); }

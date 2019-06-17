@@ -1,0 +1,23 @@
+#tag{
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-inline-start: 10px!important;
+  padding-inline-end: 10px;
+}
+
+#tag li{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#tag, #tag li div a{
+  list-style: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.tag-title {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: rgba(116, 116, 116, 0.194);
+}
