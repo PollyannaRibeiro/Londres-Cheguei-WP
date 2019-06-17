@@ -14,7 +14,7 @@ get_header(); ?>
 						<div class="row main-post">				
 							<?php 
 								$args_1 = array(
-									'cat' 			=> '1',
+									'tag' 			=> '70',
 									'posts_per_page'=> '1',
 									'page'          => '1'
 								);
@@ -48,7 +48,7 @@ get_header(); ?>
 							<ul class="row">			
 								<?php 
 									$args_2 = array(
-										'cat' 			=> '26',
+										'tag' 			=> '47',
 										'posts_per_page'=> '3',
 										'page'          => '1'
 									);
@@ -82,7 +82,7 @@ get_header(); ?>
 							<ul class="row">			
 								<?php 
 									$args_2 = array(
-										'cat' 			=> '13',
+										'cat' 			=> '1',
 										'posts_per_page'=> '4',
 										'page'          => '1'
 									);
@@ -230,6 +230,10 @@ get_header(); ?>
 							<script>
 									(adsbygoogle = window.adsbygoogle || []).push({});
 							</script>		
+
+							<a class="twitter-timeline" href="https://twitter.com/londrescheguei?ref_src=twsrc%5Etfw">
+							Tweets by londrescheguei</a> 
+							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 							
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<ins class="adsbygoogle"
