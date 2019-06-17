@@ -13,14 +13,14 @@
 				<div class="col-3 col-footer">
 					<div class="float-right">
 						<?php wp_nav_menu(array(
-							'theme_location' => 'menu-footer', 
+							'theme_location' => 'menu-footer-1', 
 						)); ?>
 					</div>	
 				</div>
 				<div class="col-3 col-footer">
 					<div class="float-right">
 						<?php wp_nav_menu(array(
-							'theme_location' => 'menu-footer', 
+							'theme_location' => 'menu-footer-2', 
 						)); ?>
 					</div>	
 				</div>

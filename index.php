@@ -48,7 +48,7 @@ get_header(); ?>
 							<ul class="row">			
 								<?php 
 									$args_2 = array(
-										'cat' 			=> '12',
+										'cat' 			=> '26',
 										'posts_per_page'=> '3',
 										'page'          => '1'
 									);
@@ -82,7 +82,7 @@ get_header(); ?>
 							<ul class="row">			
 								<?php 
 									$args_2 = array(
-										'cat' 			=> '2',
+										'cat' 			=> '13',
 										'posts_per_page'=> '4',
 										'page'          => '1'
 									);
@@ -138,9 +138,6 @@ get_header(); ?>
 										</div>
 									</a>
 								</li>	
-
-
-
 					
 								<?php 
 								}
@@ -222,7 +219,18 @@ get_header(); ?>
 							<!-- 
 						</div> -->
 						<div class="col-lg-3 col-m-2" id="side-col">
-
+							
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<ins class="adsbygoogle"
+									style="display:block"
+									data-ad-format="fluid"
+									data-ad-layout-key="-6s+eg+1g-3d+2z"
+									data-ad-client="ca-pub-3886723811120568"
+									data-ad-slot="2910623932"></ins>
+							<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>		
+							
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<ins class="adsbygoogle"
 									style="display:block"
@@ -233,6 +241,19 @@ get_header(); ?>
 							<script>
 									(adsbygoogle = window.adsbygoogle || []).push({});
 							</script>
+							
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<ins class="adsbygoogle"
+									style="display:block"
+									data-ad-format="fluid"
+									data-ad-layout-key="-6s+eg+1g-3d+2z"
+									data-ad-client="ca-pub-3886723811120568"
+									data-ad-slot="2910623932"></ins>
+							<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+
+
 
 						</div>
 						
