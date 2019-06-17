@@ -73,7 +73,7 @@
 
 // Category and tag
 
-.categories-single-post, tags-single-post{
+.categories-single-post, .tags-single-post{
   margin-left: 3vw;
   @include font-style(1.5rem, 300);
   a{
@@ -91,7 +91,7 @@
 }
 
 #single-page-side-content{
-  background-color: rgba(160, 160, 160, 0.3);
+  background-color: $main-background-color;
 }
 
 #single-page{
