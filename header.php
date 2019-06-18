@@ -34,7 +34,7 @@
 			<div class="container-fluid" id=large-menu>
 				<div class="row">
 					<div class="col-2 header-menu" id="logo-space">
-						<img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-left"/>
+						<a href="https://londrescheguei.com/"><img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-left"/></a>
 					</div>
 
 					<div class="col-7 header-menu" id="menu-header">
@@ -46,7 +46,7 @@
 					</div>
 					<!-- search bar -->
 					<div class="col-3 header-menu" id="search-bar">
-							<form role="search" class="search-form" method="get" action="http://localhost:1234/">
+							<form role="search" class="search-form" method="get" action="https://londrescheguei.com/">
 								<div class="row search-field">
 									<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
 									<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
@@ -57,7 +57,7 @@
 				<div class="row">
 					<!-- menu categories -->
 					<div class="col-12" id="menu-cat">
-						<div class="float-left">
+						<div class="float-right">
 							<?php wp_nav_menu(array(
 								'theme_location' => 'menu-categories', 
 							)); ?>
