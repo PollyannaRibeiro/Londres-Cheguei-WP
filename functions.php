@@ -53,8 +53,9 @@ function register_my_menus() {
     array(
       'menu-header' => __( 'Header Menu' ),
 			'menu-categories' => __( 'Categories Menu' ),
-			'menu-footer' => __( 'Footer Menu' ),
-			'menu-social-media' => __( 'Social Media Menu' )
+			'menu-footer-1' => __( 'Footer Menu 1' ),
+			'menu-footer-2' => __( 'Footer Menu 2' ),
+			'menu-social-media' => __( 'Social Media Menu')
     )
   );
 }
