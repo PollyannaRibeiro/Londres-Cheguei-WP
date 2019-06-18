@@ -14,7 +14,7 @@ get_header(); ?>
 						<div class="row main-post">				
 							<?php 
 								$args_1 = array(
-									'tag' 			=> '70',
+									'tag_id' 			=> '70',
 									'posts_per_page'=> '1',
 									'page'          => '1'
 								);
@@ -219,7 +219,7 @@ get_header(); ?>
 							<!-- 
 						</div> -->
 						<div class="col-lg-3 col-m-2" id="side-col">
-							
+
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<ins class="adsbygoogle"
 									style="display:block"
@@ -229,12 +229,10 @@ get_header(); ?>
 									data-ad-slot="2910623932"></ins>
 							<script>
 									(adsbygoogle = window.adsbygoogle || []).push({});
-							</script>		
-
-							<a class="twitter-timeline" href="https://twitter.com/londrescheguei?ref_src=twsrc%5Etfw">
-							Tweets by londrescheguei</a> 
-							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</script>	
 							
+							[instagram-feed]
+
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<ins class="adsbygoogle"
 									style="display:block"
@@ -246,6 +244,12 @@ get_header(); ?>
 									(adsbygoogle = window.adsbygoogle || []).push({});
 							</script>
 							
+							<div id="twitter-widget">
+								<a class="twitter-timeline" href="https://twitter.com/londrescheguei?ref_src=twsrc%5Etfw">
+								Tweets by londrescheguei</a> 
+								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							</div>
+
 							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 							<ins class="adsbygoogle"
 									style="display:block"
