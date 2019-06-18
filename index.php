@@ -48,7 +48,7 @@ get_header(); ?>
 							<ul class="row">			
 								<?php 
 									$args_2 = array(
-										'tag' 			=> '47',
+										'tag_id' 			=> '47',
 										'posts_per_page'=> '3',
 										'page'          => '1'
 									);
@@ -145,16 +145,7 @@ get_header(); ?>
 							</ul>
 						</div>
 
-
-
 					</div>
-
-					<!-- Parallax -->
-
-					<!-- <div class="row">
-						<div class="parallax" id="front-page-parallax">
-						<div>
-					</div> -->
 					<!-- Blog  -->
 					<div class="secondary ">
 						<h1> Last Posts
@@ -245,7 +236,7 @@ get_header(); ?>
 							</script>
 							
 							<div id="twitter-widget">
-								<a class="twitter-timeline" href="https://twitter.com/londrescheguei?ref_src=twsrc%5Etfw">
+								<a class="twitter-timeline" data-height="1500" href="https://twitter.com/londrescheguei?ref_src=twsrc%5Etfw">
 								Tweets by londrescheguei</a> 
 								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 							</div>
@@ -261,23 +252,15 @@ get_header(); ?>
 									(adsbygoogle = window.adsbygoogle || []).push({});
 							</script>
 
-
+							<?php get_sidebar(); ?>
 
 						</div>
 						
 					</div>
-				
-
 				</main><!-- #main -->
-
 				<!-- Parallax -->
-
-				
-				<div class="parallax" >
-				</div>
-				
-
-				<?php get_sidebar(); ?>
+				<!-- <div class="parallax" >
+				</div> -->
 			</div><!-- .wrap -->
 		</div><!-- #content -->
 	</div><!-- .site-content-contain -->									

@@ -9,7 +9,7 @@ Template Name: Search
 <div class="main-wrap">
 <main class="container-fluid" role="main">
   <div class="secondary ">
-    <h4 class="">Posts relacionados com: <?php the_search_query(); ?></h4>
+    <h4 class="search-title">Posts relacionados com: <?php the_search_query(); ?></h4>
     <ul class="card-columns" id="search">	
       <?php 
         if( have_posts() ) { 
@@ -22,7 +22,7 @@ Template Name: Search
             <div class="card blog-card">
               <div class="blog-thumb">	<?php the_post_thumbnail(); ?>	</div>
               <div class="card-body">
-                <h1><?php the_title(); ?></h1>
+                <h1 ><?php the_title(); ?></h1>
                 <p class="card-text"><?php the_excerpt();?></p>
               </div>
             </div>
@@ -54,10 +54,6 @@ Template Name: Search
     <div class="parallax" >
     <div>
   </div> -->
-
-
-
-
 </main> 
 </div>
 <?php get_footer();?>
