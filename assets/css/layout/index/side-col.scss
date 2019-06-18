@@ -4,11 +4,16 @@
   background-color:$main-background-color;
   margin-top: 0;
 
+  .ad{
+    .adsbygoogle{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
   @media only screen and (max-width: 990px){
     display: none;
   }
 
-  #twitter-widget{
-    max-height: 30vh;
-  }
+  
 }

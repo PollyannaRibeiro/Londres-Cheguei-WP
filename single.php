@@ -66,6 +66,10 @@ Template Name: Single
 					
 					<!-- Sidebar -->
 					<div class="col-sm-3" id="single-page-side-content">
+						<div>
+							<?php if ( dynamic_sidebar('content_widgets') ) : else : endif; ?>
+						</div>
+
 					</div>
 				</div>
 

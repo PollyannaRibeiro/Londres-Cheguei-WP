@@ -8067,11 +8067,12 @@ body, main {
 #side-col {
   background-color: #dcdcdc4d;
   margin-top: 0; }
+  #side-col .ad .adsbygoogle {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
   @media only screen and (max-width: 990px) {
     #side-col {
       display: none; } }
-  #side-col #twitter-widget {
-    max-height: 30vh; }
 
 /* Parallax */
 .parallax {

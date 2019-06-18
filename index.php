@@ -211,49 +211,55 @@ get_header(); ?>
 						</div> -->
 						<div class="col-lg-3 col-m-2" id="side-col">
 
-							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<ins class="adsbygoogle"
-									style="display:block"
-									data-ad-format="fluid"
-									data-ad-layout-key="-6s+eg+1g-3d+2z"
-									data-ad-client="ca-pub-3886723811120568"
-									data-ad-slot="2910623932"></ins>
-							<script>
-									(adsbygoogle = window.adsbygoogle || []).push({});
-							</script>	
+							<div>
+								<?php if ( dynamic_sidebar('content_widgets') ) : else : endif; ?>
+							</div>
 							
+							<div class="ad">
+								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<ins class="adsbygoogle"
+										style="display:block"
+										data-ad-format="fluid"
+										data-ad-layout-key="-6s+eg+1g-3d+2z"
+										data-ad-client="ca-pub-3886723811120568"
+										data-ad-slot="2910623932"></ins>
+								<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>	
+							</div>
 							[instagram-feed]
 
-							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<ins class="adsbygoogle"
-									style="display:block"
-									data-ad-format="fluid"
-									data-ad-layout-key="-6s+eg+1g-3d+2z"
-									data-ad-client="ca-pub-3886723811120568"
-									data-ad-slot="2910623932"></ins>
-							<script>
-									(adsbygoogle = window.adsbygoogle || []).push({});
-							</script>
-							
+							<div class="ad">
+								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<ins class="adsbygoogle"
+										style="display:block"
+										data-ad-format="fluid"
+										data-ad-layout-key="-6s+eg+1g-3d+2z"
+										data-ad-client="ca-pub-3886723811120568"
+										data-ad-slot="2910623932"></ins>
+								<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+
 							<div id="twitter-widget">
-								<a class="twitter-timeline" data-height="1500" href="https://twitter.com/londrescheguei?ref_src=twsrc%5Etfw">
+								<a class="twitter-timeline" data-height="500" href="https://twitter.com/londrescheguei?ref_src=twsrc%5Etfw">
 								Tweets by londrescheguei</a> 
 								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 							</div>
-
-							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-							<ins class="adsbygoogle"
-									style="display:block"
-									data-ad-format="fluid"
-									data-ad-layout-key="-6s+eg+1g-3d+2z"
-									data-ad-client="ca-pub-3886723811120568"
-									data-ad-slot="2910623932"></ins>
-							<script>
-									(adsbygoogle = window.adsbygoogle || []).push({});
-							</script>
-
-							<?php get_sidebar(); ?>
-
+							
+							<div class="ad">
+								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<ins class="adsbygoogle"
+										style="display:block"
+										data-ad-format="fluid"
+										data-ad-layout-key="-6s+eg+1g-3d+2z"
+										data-ad-client="ca-pub-3886723811120568"
+										data-ad-slot="2910623932"></ins>
+								<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
 						</div>
 						
 					</div>
