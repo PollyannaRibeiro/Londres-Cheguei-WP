@@ -227,8 +227,9 @@ get_header(); ?>
 										(adsbygoogle = window.adsbygoogle || []).push({});
 								</script>	
 							</div>
-							[instagram-feed]
-
+							<div id="insta">
+								[instagram-feed]
+							</div>
 							<div class="ad">
 								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 								<ins class="adsbygoogle"
