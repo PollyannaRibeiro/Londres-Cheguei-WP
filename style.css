@@ -7598,7 +7598,7 @@ html {
   min-height: 100%;
   position: relative; }
   html body {
-    margin-bottom: 20vh; }
+    margin-bottom: 30vh; }
 
 .main-wrap {
   min-height: 100%;
@@ -8126,7 +8126,7 @@ body, main {
 #footer {
   background-color: #dcdcdc4d;
   position: absolute;
-  height: 20vh;
+  height: 30vh;
   bottom: 0;
   left: 0;
   margin-left: 0;
@@ -8136,16 +8136,27 @@ body, main {
     list-style: none; }
   #footer a {
     color: black; }
+  @media only screen and (min-width: 751px) {
+    #footer .col-footer {
+      padding-left: 5%; } }
+  #footer .col-footer .col-6, #footer .col-footer .col-sm-6 {
+    background-color: #dcdcdc; }
   #footer .col-footer div div ul {
     padding: 2rem;
     font-size: 1.5rem;
-    margin-left: 10vw; }
+    width: 100%; }
+    #footer .col-footer div div ul li {
+      padding-left: 1rem; }
   #footer .social-media ul {
-    margin-top: 2rem;
-    margin-right: 10rem; }
-    @media only screen and (max-width: 991px) {
+    margin-right: 25%;
+    margin-left: 25%; }
+    @media only screen and (max-width: 400px) {
       #footer .social-media ul {
-        margin-right: 5vw; } }
+        margin-right: 0%;
+        margin-left: 15%; } }
+    @media only screen and (min-width: 751px) {
+      #footer .social-media ul {
+        margin-left: 0; } }
     @media only screen and (min-width: 1200px) {
       #footer .social-media ul {
         margin-right: 12.5vw; } }
@@ -8157,19 +8168,14 @@ body, main {
         #footer .social-media ul li {
           padding: 0.1rem; } }
   #footer .social-media .social-media-icon {
-    width: 3vw; }
-    @media only screen and (max-width: 575px) {
+    width: 8vw;
+    max-width: 75px; }
+    @media only screen and (max-width: 400px) {
+      #footer .social-media .social-media-icon {
+        width: 15vw; } }
+    @media only screen and (min-width: 401px) and (max-width: 575px) {
       #footer .social-media .social-media-icon {
         width: 10vw; } }
-    @media only screen and (min-width: 576px) and (max-width: 767px) {
-      #footer .social-media .social-media-icon {
-        width: 6vw; } }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      #footer .social-media .social-media-icon {
-        width: 5vw; } }
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      #footer .social-media .social-media-icon {
-        width: 4vw; } }
   @media only screen and (max-width: 575px) {
     #footer {
       font-size: 1.8rem;
@@ -8185,7 +8191,7 @@ body, main {
       font-size: 1.4rem;
       font-weight: 400;
       font-family: "Roboto", sans-serif; } }
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  @media only screen and (min-width: 992px) {
     #footer {
       font-size: 1.5rem;
       font-weight: 400;
