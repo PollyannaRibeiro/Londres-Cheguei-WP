@@ -9,8 +9,8 @@
 <?php wp_footer(); ?>
 
 	<footer id="footer" class="footer mt-auto py-3" role="contentinfo">
-			<div class="container" id="footer-phone">
-				<div class="row social-media">
+			<div class="row" id="footer-phone">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center social-media">
 						<ul>
 							<li><a href="https://www.instagram.com/londrescheguei"><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/instagram.svg" alt="" srcset=""></a></li>
 							<li><a href="https://www.facebook.com/londrescheguei/"><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/facebook.svg" alt="" srcset=""></a></li>
@@ -18,13 +18,13 @@
 							<li><a href="https://twitter.com/londrescheguei"><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/twitter.svg" alt="" srcset=""></a></li>
 						</ul>
 				</div>
-				<div class="row col-footer" id="foter-1">
-					<div class="col-6 col-sm-6 col-md-6">
+				<div class="col-6 col-sm-12 col-md-6 col-lg-6 col-footer" id="foter-1">
+					<div class="col-sm-6 col-md-6 col-xl-6">
 						<?php wp_nav_menu(array(
 							'theme_location' => 'menu-footer-1', 
 						)); ?>
 					</div>	
-					<div class="col-6 col-sm-6 col-md-6">
+					<div class="col-sm-6 col-md-6 col-xl-6">
 						<?php wp_nav_menu(array(
 							'theme_location' => 'menu-footer-1', 
 						)); ?>
@@ -32,29 +32,6 @@
 				</div>
 				
 			</div>
-
-			<!-- <div class="row" id="footer-bigger">
-				<div class="col-3 col-sm-3 col-footer" id="foter-1">
-					<?php wp_nav_menu(array(
-						'theme_location' => 'menu-footer-1', 
-					)); ?>
-				</div>
-				<div class="col-3 col-sm-3 col-footer" id="footer-2">
-					<?php wp_nav_menu(array(
-						'theme_location' => 'menu-footer-2', 
-					)); ?>
-				</div>
-
-				<div class="col-6 col-sm-6 social-media">
-						<ul class="">
-							<li><a href="https://www.instagram.com/londrescheguei"><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/instagram.svg" alt="" srcset=""></a></li>
-							<li><a href="https://www.facebook.com/londrescheguei/"><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/facebook.svg" alt="" srcset=""></a></li>
-							<li><a href="https://www.youtube.com/channel/UCbcNsxLxim2bbsgqnaQNswQ"><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/youtube.svg" alt="" srcset=""></a></li>
-							<li><a href="https://twitter.com/londrescheguei"><img class="social-media-icon" src="<?= $home;?>/assets/images/social-media/twitter.svg" alt="" srcset=""></a></li>
-						</ul>
-				</div>
-				
-			</div> -->
 		</div>
 	</footer>	
 </div><!-- #page -->
