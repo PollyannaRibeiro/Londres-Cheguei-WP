@@ -65,19 +65,33 @@ add_action( 'init', 'register_my_menus' );
 
 // Register our sidebars and widgetized areas.
 
-function arphabet_widgets_init() {
+// function arphabet_widgets_init() {
 
-	register_sidebar( array(
-		'name'          => 'Home right sidebar',
-		'id'            => 'home_right_1',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
-	) );
+// 	register_sidebar( array(
+// 		'name'          => 'Home right sidebar',
+// 		'id'            => 'home_right_1',
+// 		'before_widget' => '<div>',
+// 		'after_widget'  => '</div>',
+// 		'before_title'  => '<h2 class="rounded">',
+// 		'after_title'   => '</h2>',
+// 	) );
 
-}
-add_action( 'widgets_init', 'arphabet_widgets_init' );
+// }
+// add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+    'name' => 'Widgetized Area',
+    'before_widget' => '<div class = "widgetizedArea">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  )
+);
+
+add_action( 'widgets_init', 'register_sidebar' );
+
 
 
 
