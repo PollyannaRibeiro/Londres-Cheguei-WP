@@ -14,10 +14,14 @@ function addClass(){
   $('.highlight-thumb img').addClass('card-img');
   $('.carousel-thumb img').addClass('d-block w-100');
   // $('body').scrollspy({ target: '#navbar-example' });
-
   $('.gallery-item .gallery-icon img').addClass('img-fluid');
-
-	
-  
 }
 addClass();
+
+function transformInParallax(){
+  var src = document.querySelector(".main-thum img").getAttribute('src');
+  var background= document.querySelector(".main-thum").style.backgroundImage = `url(' ${src}')`;
+
+  console.log(background)
+};
+transformInParallax();

@@ -14,7 +14,7 @@ get_header(); ?>
 						<div class="row main-post">				
 							<?php 
 								$args_1 = array(
-									'tag_id' 			=> '70',
+									'tag_id' 			=> '70', //tag_id 70
 									'posts_per_page'=> '1',
 									'page'          => '1'
 								);
@@ -25,9 +25,13 @@ get_header(); ?>
 								<div class="col-12 main-post-card">					
 									<a class="main-post-link" href="<?php the_permalink();?>">
 										<div class="card main-post-card-content">
-											<div class="main-thumb">	<?php the_post_thumbnail(); ?>	</div>
+											<div class="main-thum parallax">	<?php the_post_thumbnail(); ?>	</div>
 											<div class="card-img-overlay main-text">
-												<section><h1 class="card-title"><?php the_title(); ?></h1><section>
+												<section>
+													<h1 class="card-title"><?php the_title(); ?></h1>
+													<p class="card-text"><?php the_excerpt();?></p>
+												<section>
+												
 												<section>
 													<?php 
 														foreach((get_the_category()) as $category) { 
@@ -211,10 +215,12 @@ get_header(); ?>
 						</div> -->
 						<div class="col-lg-3 col-m-2" id="side-col">
 
-							<div>
-								<?php if ( dynamic_sidebar('content_widgets') ) : else : endif; ?>
-							</div>
 							
+							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Widgetized Area") ) : ?>
+							<?php endif;?>
+
+
+
 							<div class="ad">
 								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 								<ins class="adsbygoogle"
@@ -226,9 +232,6 @@ get_header(); ?>
 								<script>
 										(adsbygoogle = window.adsbygoogle || []).push({});
 								</script>	
-							</div>
-							<div id="insta">
-								[instagram-feed]
 							</div>
 							<div class="ad">
 								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -261,6 +264,7 @@ get_header(); ?>
 										(adsbygoogle = window.adsbygoogle || []).push({});
 								</script>
 							</div>
+
 							<div id="facebook-widget">
 							<div class="fb-page" data-href="https://www.facebook.com/londrescheguei/" 
 								data-tabs="timeline" data-width="" data-height="500px" data-small-header="false" 
