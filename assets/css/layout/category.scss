@@ -17,7 +17,5 @@
 }
 
 .category-title {
-  padding: 1rem;
-  font-size: 2rem;
-  background-color: rgba(116, 116, 116, 0.194);
+  @include spotlight-pages-title();
 }

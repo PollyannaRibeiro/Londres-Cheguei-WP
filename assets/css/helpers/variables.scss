@@ -3,6 +3,7 @@ $default-font: 'Roboto', sans-serif;
 $condensed-font: 'Roboto Condensed', sans-serif;
 
 $main-background-color: #dcdcdc4d;
+$parallax-img: "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80";
 
 $height-footer: 30vh;
 
@@ -11,4 +12,10 @@ $height-footer: 30vh;
   font-size: $size;
   font-weight: $weight;
   font-family: $family;
+}
+
+@mixin spotlight-pages-title(){
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: rgba(116, 116, 116, 0.194);
 }
