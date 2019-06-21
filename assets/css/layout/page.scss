@@ -1,0 +1,10 @@
+.page-content{
+  h1{
+    @include spotlight-pages-title();
+  }
+  p{
+    @include font-style(1.8rem, 100);
+    text-align: justify;
+  }
+};
+
