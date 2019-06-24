@@ -8,14 +8,17 @@ html{
   margin-top: 0;
   min-height: 100%;
   position: relative;
+  overflow-x: hidden;
   body{
-    margin-bottom: $height-footer; //setting the footer in the bottom
+    margin-bottom: $height-footer; //setting the footer in the bottom    
+    margin-left: 2vw;
+    margin-right: 2vw;
   }
 }
 
 .main-wrap{
   min-height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 
 }
 
