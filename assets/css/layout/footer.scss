@@ -42,21 +42,6 @@
     padding-top: 1rem;
     display: block;
 
-    // // margin-top: 2rem;
-    // // margin-right: 25%;
-    // // padding-left: 10%;
-
-    // @media only screen and (min-width:401px) and (max-width:691px){
-    //   // margin-left: 25%;
-    //   // padding-left: 0%;
-    // }
-    // @media only screen and (min-width:751px){
-    //   // margin-left: 0;
-    // }
-    // @media only screen and (min-width: 1200px){
-    //   // margin-right: 12.5vw;
-    // }
-
     li{
       padding: 0.3rem;
       position: relative;
@@ -65,11 +50,12 @@
         padding: 0.1rem;
       } 
     }
+
+    .social-li{
+      display: inline-block;
+    }
   }
 
-  .social-li{
-    display: inline-block;
-  }
   .social-media-icon{
     width: 8vw;
     max-width: 75px;;
