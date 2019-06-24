@@ -37,18 +37,25 @@
   overflow: hidden;
 
   img{
-    width: 100%;
+    width: 50%;
+    margin-left:25%;
+    margin-right: 25%;
+    min-height: 30vh;
+  
     height: auto;
     position: relative;
   
     @media only screen and (max-width: 1200px){
-      min-width: 100%;
-      width: auto;
-      min-height: 30vh;
-      height: auto;
-      position: relative;
-      top: 0;
-      transform: translateY(0);
+      width: 100%;
+      margin-left:0;
+      margin-right: 0;
+      // min-width: 100%;
+      // width: auto;
+      // min-height: 30vh;
+      // height: auto;
+      // position: relative;
+      // top: 0;
+      // transform: translateY(0);
     }
   }
 }
@@ -56,18 +63,23 @@
 .main-text{
   background-color: rgba(0, 0, 0, 0.5);
 
-  section h1{
-    color: white;
-    text-align: center;
-    position: relative;
-    @include font-style (2.8rem, 300, $condensed-font);
-    padding: 3vh;
+  section {
+    .categories-section{
+      margin-right: 4vw;
+    }
+    
+    h1{
+      color: white;
+      text-align: center;
+      position: relative;
+      @include font-style (2.8rem, 300, $condensed-font);
+      padding: 3vh;
 
-    @media only screen and (max-width:750px) {
-      font-size: 2.4rem;
+      @media only screen and (max-width:750px) {
+        font-size: 2.4rem;
+      }
     }
   }
-
   a.categories{
     color: black;
     background-color: #fff;

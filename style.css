@@ -7597,13 +7597,16 @@ a.text-dark:hover, a.text-dark:focus {
 html {
   margin-top: 0;
   min-height: 100%;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   html body {
-    margin-bottom: 30vh; }
+    margin-bottom: 30vh;
+    margin-left: 2vw;
+    margin-right: 2vw; }
 
 .main-wrap {
   min-height: 100%;
-  overflow: hidden; }
+  overflow-x: hidden; }
 
 main {
   overflow: auto; }
@@ -7782,21 +7785,22 @@ body, main {
 .main-thumb {
   overflow: hidden; }
   .main-thumb img {
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    min-height: 30vh;
     height: auto;
     position: relative; }
     @media only screen and (max-width: 1200px) {
       .main-thumb img {
-        min-width: 100%;
-        width: auto;
-        min-height: 30vh;
-        height: auto;
-        position: relative;
-        top: 0;
-        transform: translateY(0); } }
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0; } }
 
 .main-text {
   background-color: rgba(0, 0, 0, 0.5); }
+  .main-text section .categories-section {
+    margin-right: 4vw; }
   .main-text section h1 {
     color: white;
     text-align: center;
@@ -8134,7 +8138,7 @@ body, main {
   bottom: 0;
   left: 0;
   margin-left: 0;
-  width: 100vw; }
+  width: 105vw; }
   #footer ul {
     text-decoration: none;
     list-style: none; }
