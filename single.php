@@ -70,6 +70,59 @@ Template Name: Single
 							<?php if ( dynamic_sidebar('content_widgets') ) : else : endif; ?>
 						</div>
 
+						<div class="ad">
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<ins class="adsbygoogle"
+									style="display:block"
+									data-ad-format="fluid"
+									data-ad-layout-key="-6s+eg+1g-3d+2z"
+									data-ad-client="ca-pub-3886723811120568"
+									data-ad-slot="2910623932"></ins>
+							<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>	
+						</div>
+						<div class="ad">
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<ins class="adsbygoogle"
+									style="display:block"
+									data-ad-format="fluid"
+									data-ad-layout-key="-6s+eg+1g-3d+2z"
+									data-ad-client="ca-pub-3886723811120568"
+									data-ad-slot="2910623932"></ins>
+							<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+
+						<div id="twitter-widget">
+							<a class="twitter-timeline" data-height="500" href="https://twitter.com/londrescheguei?ref_src=twsrc%5Etfw">
+							Tweets by londrescheguei</a> 
+							<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+						
+						<div class="ad">
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<ins class="adsbygoogle"
+									style="display:block"
+									data-ad-format="fluid"
+									data-ad-layout-key="-6s+eg+1g-3d+2z"
+									data-ad-client="ca-pub-3886723811120568"
+									data-ad-slot="2910623932"></ins>
+							<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+
+						<div id="facebook-widget">
+						<div class="fb-page" data-href="https://www.facebook.com/londrescheguei/" 
+							data-tabs="timeline" data-width="" data-height="500px" data-small-header="false" 
+							data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+								<blockquote cite="https://www.facebook.com/londrescheguei/" class="fb-xfbml-parse-ignore">
+									<a href="https://www.facebook.com/londrescheguei/">Londres, cheguei</a>
+								</blockquote>
+						</div>
+						</div>
 					</div>
 				</div>
 

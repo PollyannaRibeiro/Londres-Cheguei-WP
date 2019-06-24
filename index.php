@@ -25,14 +25,13 @@ get_header(); ?>
 								<div class="col-12 main-post-card">					
 									<a class="main-post-link" href="<?php the_permalink();?>">
 										<div class="card main-post-card-content">
-											<div class="main-thum parallax">	<?php the_post_thumbnail(); ?>	</div>
+											<div class="main-thumb">	<?php the_post_thumbnail(); ?>	</div>
 											<div class="card-img-overlay main-text">
 												<section>
 													<h1 class="card-title"><?php the_title(); ?></h1>
-													<p class="card-text"><?php the_excerpt();?></p>
 												<section>
 												
-												<section>
+												<section class="categories-section">
 													<?php 
 														foreach((get_the_category()) as $category) { 
 															echo '<a class="categories" href="' . get_category_link( $category->term_id ) . '">' . $category->cat_name . '</a>';
