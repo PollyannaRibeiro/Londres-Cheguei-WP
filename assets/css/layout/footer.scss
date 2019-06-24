@@ -16,7 +16,7 @@
     color: black;
   }
 
-  .row{
+  .row#footer-links{
     background-color: #dcdcdc;
   }
 
@@ -30,7 +30,6 @@
     div div ul{
       padding: 2rem;
       font-size: 1.5rem;
-      // margin-left: 10vw;
       width: 100%;
 
       li{
@@ -39,52 +38,55 @@
     }
   }
 
-    ul {
-      padding-top: 1rem;
-      display: block;
+  ul {
+    padding-top: 1rem;
+    display: block;
 
-      // // margin-top: 2rem;
-      // // margin-right: 25%;
-      // // padding-left: 10%;
+    // // margin-top: 2rem;
+    // // margin-right: 25%;
+    // // padding-left: 10%;
 
-      // @media only screen and (min-width:401px) and (max-width:691px){
-      //   // margin-left: 25%;
-      //   // padding-left: 0%;
-      // }
-      // @media only screen and (min-width:751px){
-      //   // margin-left: 0;
-      // }
-      // @media only screen and (min-width: 1200px){
-      //   // margin-right: 12.5vw;
-      // }
+    // @media only screen and (min-width:401px) and (max-width:691px){
+    //   // margin-left: 25%;
+    //   // padding-left: 0%;
+    // }
+    // @media only screen and (min-width:751px){
+    //   // margin-left: 0;
+    // }
+    // @media only screen and (min-width: 1200px){
+    //   // margin-right: 12.5vw;
+    // }
 
-      li{
-        padding: 0.3rem;
-        position: relative;
-        display: block;
+    li{
+      padding: 0.3rem;
+      position: relative;
 
-        @media only screen and (min-width: 992px) and (max-width:1199px){
-          padding: 0.1rem;
-        }
-        
-        
-      }
+      @media only screen and (min-width: 992px) and (max-width:1199px){
+        padding: 0.1rem;
+      } 
     }
-    .social-media-icon{
-      width: 8vw;
-      max-width: 75px;;
+  }
 
+  .social-li{
+    display: inline-block;
+  }
+  .social-media-icon{
+    width: 8vw;
+    max-width: 75px;;
 
-      @media only screen and (max-width:400px){
-        width: 15vw;
-      }
-
-      @media only screen and (min-width:401px) and (max-width:575px){
-        width: 10vw;
-      }
+    @media only screen and (max-width:400px){
+      width: 15vw;
     }
+
+    @media only screen and (min-width:401px) and (max-width:575px){
+      width: 10vw;
+    }
+  }
   
-  
+  #copyright{
+    @include font-style(1.4rem, 100);
+  }
+
   @media only screen and (max-width:575px){
     @include font-style(1.8rem);
   }
