@@ -7999,6 +7999,7 @@ body, main {
   color: black; }
 
 #blog {
+  overflow-y: auto;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 1rem;
