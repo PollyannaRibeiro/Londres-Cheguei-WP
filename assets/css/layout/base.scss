@@ -46,8 +46,7 @@ body, main {
 }
 
 .row:before, .row:after {
-  width:0px!important; 
-  height:0px!important;
+  display: table-row!important;
 } // this code avoid issues in Safari browser
 
 
