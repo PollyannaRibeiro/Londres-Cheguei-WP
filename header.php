@@ -85,7 +85,7 @@
 							</div>	
 						</div>
 						<div class="col-3 header-menu" id="search-bar">
-								<form role="search" class="search-form" method="get" action="http://localhost:1234/">
+								<form role="search" class="search-form" method="get" action="https://londrescheguei.com/">
 									<div class="row search-field">
 										<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
 										<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
@@ -119,7 +119,7 @@
 									)); ?>
 							<li>
 						</ul>
-						<form role="search" class="search-form" method="get" action="http://localhost:1234/">
+						<form role="search" class="search-form" method="get" action="https://londrescheguei.com/">
 							<div class="row search-field">
 								<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
 								<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
