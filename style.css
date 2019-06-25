@@ -7600,20 +7600,26 @@ html {
   position: relative;
   overflow-x: hidden; }
   html body {
-    margin-bottom: 30vh;
-    margin-left: 2vw;
-    margin-right: 2vw; }
+    position: relative; }
+  html #page-container {
+    position: relative;
+    min-height: 100vh; }
+    html #page-container #content-wrap {
+      padding-bottom: 20vh; }
 
 .main-wrap {
   min-height: 100%;
   overflow-x: hidden; }
 
 main {
-  overflow: auto; }
+  overflow-y: auto; }
 
 body, main {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif; }
+
+.row:before, .row:after {
+  display: table-row !important; }
 
 /* Header.php */
 .header-menu {
@@ -7711,7 +7717,8 @@ body, main {
 
 .navbar-nav {
   padding-top: 10vh;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  margin-left: auto; }
   .navbar-nav li {
     list-style: none;
     padding: 0.5rem 0; }
@@ -7836,8 +7843,8 @@ body, main {
 /* Highlight Post */
 .highlight-post {
   margin-bottom: 1rem;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
   position: relative;
   text-decoration: none; }
   .highlight-post ul {
@@ -8134,7 +8141,7 @@ body, main {
 #footer {
   background-color: #dcdcdc4d;
   position: absolute;
-  height: 30vh;
+  height: 20vh;
   bottom: 0;
   left: 0;
   margin-left: 0;
