@@ -108,13 +108,7 @@ get_header(); ?>
 								?>	
 							</ul>
 
-
 						</div>
-
-						
-
-
-
 
 						<!-- Highlight Post Phone Version -->
 
@@ -190,9 +184,6 @@ get_header(); ?>
 									echo '<div class="misha_loadmore"> LOAD MORE </div>'; // you can use <a> as well
 								?>
 								
-
-
-								
 								<!-- <div class="previous-next container">
 									<div class="row justify-content-center">
 										<?php 
@@ -213,12 +204,9 @@ get_header(); ?>
 							<!-- 
 						</div> -->
 						<div class="col-lg-3 col-m-2" id="side-col">
-
 							
 							<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Widgetized Area") ) : ?>
 							<?php endif;?>
-
-
 
 							<div class="ad">
 								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>

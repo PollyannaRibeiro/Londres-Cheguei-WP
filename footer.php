@@ -7,7 +7,7 @@
 <?php $home=get_template_directory_uri();?>
 
 <?php wp_footer(); ?>
-
+	</div> <!-- #content-wrap -->
 	<footer id="footer" class="footer mt-auto py-3" role="contentinfo">
 			<div class="row" id="footer-links">
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center social-media">
@@ -34,7 +34,7 @@
 			<div class="row justify-content-center" id="copyright"><p>2019 @Copyright</p></div>
 		</div>
 	</footer>	
-</div><!-- #page -->
+</div><!-- #page-container -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="<?= $home;?>/assets/js/index.js"></script>

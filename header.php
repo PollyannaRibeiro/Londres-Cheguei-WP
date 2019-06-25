@@ -32,101 +32,102 @@
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
 
-<div id="page" class="site">
-	<header id="masthead" class="site-header" role="banner">
-			<div class="container-fluid" id=large-menu>
-				<div class="row">
-					<div class="col-2 header-menu" id="logo-space">
-						<a href="https://londrescheguei.com/"><img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-left"/></a>
-					</div>
-
-					<div class="col-7 header-menu" id="menu-header">
-						<div class="float-right">
-							<?php wp_nav_menu(array(
-								'theme_location' => 'menu-header', 
-							)); ?>
-						</div>	
-					</div>
-					<!-- search bar -->
-					<div class="col-3 header-menu" id="search-bar">
-							<form role="search" class="search-form" method="get" action="https://londrescheguei.com/">
-								<div class="row search-field">
-									<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
-									<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
-								</div>
-							</form>
-					</div>
-				</div>
-				<div class="row">
-					<!-- menu categories -->
-					<div class="col-12" id="menu-cat">
-						<div class="float-right">
-							<?php wp_nav_menu(array(
-								'theme_location' => 'menu-categories', 
-							)); ?>
-						</div>	
-					</div>
-
-				</div>
-			</div>
-			<!-- tablet menu -->
-			<div class="container-fluid" id=tablet-menu>
-				<div class="row">
-					<div class="col-4 header-menu" id="logo-space">
-						<img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-left"/>
-					</div>
-
-					<div class="col-5 header-menu" id="menu-header">
-						<div class="float-right">
-							<?php wp_nav_menu(array(
-								'theme_location' => 'menu-header', 
-							)); ?>
-						</div>	
-					</div>
-					<div class="col-3 header-menu" id="search-bar">
-							<form role="search" class="search-form" method="get" action="http://localhost:1234/">
-								<div class="row search-field">
-									<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
-									<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
-								</div>
-							</form>
-					</div>
-				</div>
-			</div>
-			<!-- Burger menu -->
-			<nav class="navbar navbar-light" id=burger-menu>
-				<a class="navbar-brand" href="#"><img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-right"/></a>
-				<button class="navbar-toggler" 
-					type="button" data-toggle="collapse" 
-					data-target="#navbarTogglerDemo02" 
-					aria-controls="navbarTogglerDemo02" 
-					aria-expanded="false" 
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-					<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-						<li class="nav-item active">
-							<?php wp_nav_menu(array(
-									'theme_location' => 'menu-header' 
-								)); ?>
-						<li>
-						<li>
-							<?php wp_nav_menu(array(
-									'theme_location' => 'menu-categories'
-								)); ?>
-						<li>
-					</ul>
-					<form role="search" class="search-form" method="get" action="http://localhost:1234/">
-						<div class="row search-field">
-							<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
-							<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
+<div id="page-container" class="site">
+	<div id="content-wrap">
+		<header id="masthead" class="site-header" role="banner">
+				<div class="container-fluid" id=large-menu>
+					<div class="row">
+						<div class="col-2 header-menu" id="logo-space">
+							<a href="https://londrescheguei.com/"><img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-left"/></a>
 						</div>
-					</form>
-				</div>
-			</nav>
-	</header>
 
-	<div class="site-content-contain">
-		<div id="content" class="site-content">
+						<div class="col-7 header-menu" id="menu-header">
+							<div class="float-right">
+								<?php wp_nav_menu(array(
+									'theme_location' => 'menu-header', 
+								)); ?>
+							</div>	
+						</div>
+						<!-- search bar -->
+						<div class="col-3 header-menu" id="search-bar">
+								<form role="search" class="search-form" method="get" action="https://londrescheguei.com/">
+									<div class="row search-field">
+										<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
+										<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
+									</div>
+								</form>
+						</div>
+					</div>
+					<div class="row">
+						<!-- menu categories -->
+						<div class="col-12" id="menu-cat">
+							<div class="float-right">
+								<?php wp_nav_menu(array(
+									'theme_location' => 'menu-categories', 
+								)); ?>
+							</div>	
+						</div>
+
+					</div>
+				</div>
+				<!-- tablet menu -->
+				<div class="container-fluid" id=tablet-menu>
+					<div class="row">
+						<div class="col-4 header-menu" id="logo-space">
+							<img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-left"/>
+						</div>
+
+						<div class="col-5 header-menu" id="menu-header">
+							<div class="float-right">
+								<?php wp_nav_menu(array(
+									'theme_location' => 'menu-header', 
+								)); ?>
+							</div>	
+						</div>
+						<div class="col-3 header-menu" id="search-bar">
+								<form role="search" class="search-form" method="get" action="http://localhost:1234/">
+									<div class="row search-field">
+										<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
+										<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
+									</div>
+								</form>
+						</div>
+					</div>
+				</div>
+				<!-- Burger menu -->
+				<nav class="navbar navbar-light" id=burger-menu>
+					<a class="navbar-brand" href="#"><img src="<?= $home;?>/assets/images/logo/logo-londres-cheguei.png" id="logo" class="float-right"/></a>
+					<button class="navbar-toggler" 
+						type="button" data-toggle="collapse" 
+						data-target="#navbarTogglerDemo02" 
+						aria-controls="navbarTogglerDemo02" 
+						aria-expanded="false" 
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+							<li class="nav-item active">
+								<?php wp_nav_menu(array(
+										'theme_location' => 'menu-header' 
+									)); ?>
+							<li>
+							<li>
+								<?php wp_nav_menu(array(
+										'theme_location' => 'menu-categories'
+									)); ?>
+							<li>
+						</ul>
+						<form role="search" class="search-form" method="get" action="http://localhost:1234/">
+							<div class="row search-field">
+								<input type="text" name="s" class="form-control search-input" placeholder="search" value="<?php the_search_query(); ?>">
+								<button type="submit" class="btn btn-light search-icon"><i class="fas fa-search"></i>
+							</div>
+						</form>
+					</div>
+				</nav>
+		</header>
+
+		<div class="site-content-contain">
+			<div id="content" class="site-content">
