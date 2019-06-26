@@ -1,13 +1,18 @@
+.category-title {
+  @include spotlight-pages-title();
+}
+
 #categories{
+  overflow-y: auto;
   margin-bottom: 0;
   padding-top: 1rem;
   padding-inline-start: 10px!important;
   padding-inline-end: 10px;
-}
 
-#categories li{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 #categories, #categories li div a{
@@ -16,6 +21,3 @@
   font-size: 1rem;
 }
 
-.category-title {
-  @include spotlight-pages-title();
-}

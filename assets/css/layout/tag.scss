@@ -1,13 +1,18 @@
+.tag-title {
+  @include spotlight-pages-title();
+}
+
 #tag{
+  overflow-y: auto;
   margin-bottom: 0;
   padding-top: 1rem;
   padding-inline-start: 10px!important;
   padding-inline-end: 10px;
-}
 
-#tag li{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  #tag li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 #tag, #tag li div a{
@@ -16,6 +21,3 @@
   font-size: 1rem;
 }
 
-.tag-title {
-  @include spotlight-pages-title();
-}
