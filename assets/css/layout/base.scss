@@ -3,29 +3,25 @@
   padding: 0;
 }
 
-
 html{
   margin-top: 0;
   min-height: 100%;
   position: relative;
   overflow-x: hidden;
   body{
-    // margin-bottom: $height-footer; //setting the footer in the bottom     
-    // margin-left: 2vw;
-    // margin-right: 2vw;
     position: relative;
   }
 
   #page-container{
     position: relative;
     min-height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 
     #content-wrap{
       padding-bottom: $height-footer; //setting the footer in the bottom  
     }
   }
-
-
 }
 
 .main-wrap{
@@ -34,23 +30,14 @@ html{
 }
 
 main{
-  // margin-bottom: $height-footer; //setting the footer in the bottom  
   overflow-y: auto;
-  // flex: 1 0 auto;
 }
 
 body, main {
   overflow-x: hidden;
   font-family: $default-font;
-
 }
 
 .row:before, .row:after {
   display: table-row!important;
 } // this code avoid issues in Safari browser
-
-
-// #author-page, #category-page{
-//   padding-bottom: 20vh; 
-
-// }

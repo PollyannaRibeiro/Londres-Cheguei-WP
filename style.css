@@ -7603,7 +7603,9 @@ html {
     position: relative; }
   html #page-container {
     position: relative;
-    min-height: 100vh; }
+    min-height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth; }
     html #page-container #content-wrap {
       padding-bottom: 20vh; }
 
@@ -8146,7 +8148,8 @@ body, main {
   bottom: 0;
   left: 0;
   margin-left: 0;
-  width: 105vw; }
+  width: 105vw;
+  overflow-y: scroll; }
   #footer ul {
     text-decoration: none;
     list-style: none; }
@@ -8303,37 +8306,22 @@ body, main {
   #single-page-phone {
     display: none; } }
 
-#categories {
-  margin-bottom: 0;
-  padding-top: 1rem;
-  padding-inline-start: 10px !important;
-  padding-inline-end: 10px; }
-
-#categories li {
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
-#categories, #categories li div a {
-  list-style: none;
-  color: black;
-  font-size: 1rem; }
-
 .category-title {
   padding: 1rem;
   font-size: 2rem;
   background-color: rgba(116, 116, 116, 0.194); }
 
-#tag {
+#categories {
+  overflow-y: auto;
   margin-bottom: 0;
   padding-top: 1rem;
   padding-inline-start: 10px !important;
   padding-inline-end: 10px; }
+  #categories li {
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
-#tag li {
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
-#tag, #tag li div a {
+#categories, #categories li div a {
   list-style: none;
   color: black;
   font-size: 1rem; }
@@ -8342,6 +8330,21 @@ body, main {
   padding: 1rem;
   font-size: 2rem;
   background-color: rgba(116, 116, 116, 0.194); }
+
+#tag {
+  overflow-y: auto;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-inline-start: 10px !important;
+  padding-inline-end: 10px; }
+  #tag #tag li {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+#tag, #tag li div a {
+  list-style: none;
+  color: black;
+  font-size: 1rem; }
 
 .page-content h1 {
   padding: 1rem;
@@ -8353,12 +8356,39 @@ body, main {
   font-family: "Roboto", sans-serif;
   text-align: justify; }
 
+.article-title {
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: rgba(116, 116, 116, 0.194); }
+  .article-title li {
+    list-style: none;
+    margin-left: 4vw; }
+    .article-title li a {
+      color: black;
+      list-style: none; }
+
+#articles {
+  overflow-y: auto;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-inline-start: 10px !important;
+  padding-inline-end: 10px; }
+  #articles li {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+#articles, #articles li div a {
+  list-style: none;
+  color: black;
+  font-size: 1rem; }
+
 .search-title {
   padding: 1rem;
   font-size: 2rem;
   background-color: rgba(116, 116, 116, 0.194); }
 
 #search {
+  overflow-y: auto;
   margin-bottom: 0;
   padding-top: 1rem;
   padding-inline-start: 10px !important;
