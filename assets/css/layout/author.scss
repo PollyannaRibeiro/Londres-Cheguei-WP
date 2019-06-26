@@ -1,0 +1,31 @@
+.article-title{
+  @include spotlight-pages-title();
+
+  li {
+    list-style: none;
+    margin-left: 4vw;
+    a {  
+      color: black;
+      list-style: none;
+    }
+  }
+}
+
+#articles{
+  overflow-y: auto;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-inline-start: 10px!important;
+  padding-inline-end: 10px;
+
+  li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+#articles,#articles li div a{
+  list-style: none;
+  color: black;
+  font-size: 1rem;
+}

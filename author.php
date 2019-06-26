@@ -8,8 +8,8 @@ Template Name: Author
 <div class="main-wrap">
 <main class="container-fluid" id="author-page" role="main">
   <div class="secondary ">
-    <h4 class="category-title">Texts by <?php wp_list_authors(); ?></h4>
-    <ul class="card-columns" id="categories">	
+    <h4 class="article-title">Texts by <?php wp_list_authors(); ?></h4>
+    <ul class="card-columns" id="articles">	
       <?php 
         if( have_posts() ) { 
             while( have_posts() ) {
@@ -53,10 +53,6 @@ Template Name: Author
     <div class="parallax" >
     <div>
   </div> -->
-
-
-
-
 </main> 
 </div>
 <?php get_footer();?>
