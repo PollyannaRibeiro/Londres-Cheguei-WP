@@ -1,9 +1,9 @@
-
 <?php
 /*
 Template Name: Search
 */
 ?>
+
 <?php get_header();?>
 
 <div class="main-wrap">
@@ -50,11 +50,7 @@ Template Name: Search
       </div>
     </div>
   </div>
-  <!-- <div class="row">
-    <div class="parallax" >
-    <div>
-  </div> -->
 </main> 
-</div>
+</div> <!-- main-wrap-->
 <?php get_footer();?>
 

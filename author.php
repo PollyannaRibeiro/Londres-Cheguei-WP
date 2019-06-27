@@ -54,5 +54,5 @@ Template Name: Author
     <div>
   </div> -->
 </main> 
-</div>
+</div> <!-- main-wrap-->
 <?php get_footer();?>

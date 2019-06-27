@@ -7,7 +7,6 @@ html{
   margin-top: 0;
   min-height: 100%;
   position: relative;
-  overflow-x: hidden;
   body{
     position: relative;
   }
@@ -29,18 +28,17 @@ html{
 
 .main-wrap{
   min-height: 100%;
-  overflow-x: hidden;
 }
 
 main{
   overflow-y: auto;
 }
 
-body, main {
+body, body, main, #page-container, #content-wrap,  .main-wrap{
   overflow-x: hidden;
-  font-family: $default-font;
 }
 
+html, 
 .row:before, .row:after {
   display: table-row!important;
 } // this code avoids issues in Safari browser

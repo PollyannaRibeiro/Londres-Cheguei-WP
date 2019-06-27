@@ -50,8 +50,5 @@ Template Name: Category
           </div>
         </div>
       </main> 
-    </div><!-- .wrap -->
-  </div><!-- #content -->
-</div><!-- .site-content-contain -->	
-
+    </div><!-- main-wrap-->
 <?php get_footer();?>
