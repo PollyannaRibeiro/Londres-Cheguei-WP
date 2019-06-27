@@ -5,9 +5,9 @@
 ?>
 
 <?php $home=get_template_directory_uri();?>
-
 <?php wp_footer(); ?>
-	</div> <!-- #content-wrap -->
+					
+		</div><!-- #content-wrap -->
 	<footer id="footer" class="footer mt-auto py-3" role="contentinfo">
 			<div class="row" id="footer-links">
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center social-media">

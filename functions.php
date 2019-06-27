@@ -1,13 +1,7 @@
 <?php
 /**
- * Twenty Seventeen functions and definitions
+ * Functions and definitions
  */
-
-/**
- * Twenty Seventeen only works in WordPress 4.7 or later.
- */
-
-
 
 // Add thumbnails to the site
 
@@ -18,16 +12,6 @@ function blog_setup() {
 } 
 
 add_action( 'after_setup_theme', 'blog_setup' );
-
-// // Short title
-
-// function short_title($n) {
-// 	$title = get_the_title($post->ID);
-// 	$title = substr($title,0,$n);
-// 	echo $title;
-// }
-// add_filter( 'short_title' );
-
 
 // Read more and except length
 
@@ -45,7 +29,6 @@ function wpdocs_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 
-
 // Add menu
 
 function register_my_menus() {
@@ -61,24 +44,7 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-
-
 // Register our sidebars and widgetized areas.
-
-// function arphabet_widgets_init() {
-
-// 	register_sidebar( array(
-// 		'name'          => 'Home right sidebar',
-// 		'id'            => 'home_right_1',
-// 		'before_widget' => '<div>',
-// 		'after_widget'  => '</div>',
-// 		'before_title'  => '<h2 class="rounded">',
-// 		'after_title'   => '</h2>',
-// 	) );
-
-// }
-// add_action( 'widgets_init', 'arphabet_widgets_init' );
-
 
 if ( function_exists('register_sidebar') )
   register_sidebar(array(
@@ -92,9 +58,6 @@ if ( function_exists('register_sidebar') )
 
 add_action( 'widgets_init', 'register_sidebar' );
 
-
-
-
 // Add new post type
 
 function cadastrando_post_type_news(){
@@ -102,13 +65,11 @@ function cadastrando_post_type_news(){
 	$news='News';
 	$newsDescription='Notícias relacionadas';
 
-
 	$newsLabels=array(
 		'name'=> $news,
 		'name_singular'=>$news,
 		'add_new_item'=> 'Adicionar '.$news,
 		'edit_item'=>'Editar '.$news
-
 	);
 
 	$supports=array(
@@ -117,8 +78,6 @@ function cadastrando_post_type_news(){
 		'author',
 		'thumbnail',
 		'comments',
-		
-
 	);
 	
 	$args=array(
@@ -127,16 +86,12 @@ function cadastrando_post_type_news(){
 		'description'=>$newsDescription,	
 		'menu_icon'=>'dashicons-admin-site',
 		'supports'=>$supports,
-		'taxonomies' => array('post_tag','category')
-		
+		'taxonomies' => array('post_tag','category')		
 	);
-	
 	register_post_type('news', $args);
 }
 
 add_action('init','cadastrando_post_type_news');
-
-
 
 //SEARCH FORM
 
@@ -187,25 +142,9 @@ function misha_loadmore_ajax_handler(){
  
 		// run the loop
 		while( have_posts() ): the_post();
-
- 
 			// look into your theme code how the posts are inserted, but you can use your own HTML of course
 			// do you remember? - my example is adapted for Twenty Seventeen theme
-			get_template_part( 'assets/template-parts/post/content', get_post_format());
-			
-
-			// for the test purposes comment the line above and uncomment the below one
-			// the_title();
-			// the_post_thumbnail();
-			// the_title();
-
-
-	
-						
-
-
-						
- 
+			get_template_part( 'assets/template-parts/post/content', get_post_format()); 
  
 		endwhile;
  
@@ -213,7 +152,9 @@ function misha_loadmore_ajax_handler(){
 	die; // here we exit the script and even no wp_reset_query() required!
 }
  
- 
- 
 add_action('wp_ajax_loadmore', 'misha_loadmore_ajax_handler'); // wp_ajax_{action}
 add_action('wp_ajax_nopriv_loadmore', 'misha_loadmore_ajax_handler'); // wp_ajax_nopriv_{action}
+
+
+// RESPONSIVE YOUTUBE EMBEDS
+// FROM: https://mediarealm.com.au/articles/wordpress-responsive-youtube-embeds/

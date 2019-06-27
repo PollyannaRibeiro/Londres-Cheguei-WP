@@ -30,7 +30,6 @@
       padding-left: 5%;
     }
 
-    
     div div ul{
       padding: 2rem;
       font-size: 1.5rem;
@@ -90,22 +89,3 @@
     @include font-style(1.5rem);
   }
 }
-
-
-// .row#footer-phone{
-//   @media only screen and (max-width:765px){
-//     display: block;
-//   }
-//   @media only screen and (min-width:766px){
-//     display: none;
-//   }
-// }
-
-// .row#footer-bigger{
-//   @media only screen and (max-width:765px){
-//     display: none;
-//   }
-//   @media only screen and (min-width:766px){
-//     display: in;
-//   }
-// }

@@ -268,7 +268,5 @@ get_header(); ?>
 				<!-- Parallax -->
 				<!-- <div class="parallax" >
 				</div> -->
-			</div><!-- .wrap -->
-		</div><!-- #content -->
-	</div><!-- .site-content-contain -->									
+			</div><!-- .main-wrap -->							
 <?php get_footer();?>

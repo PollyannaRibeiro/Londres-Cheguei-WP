@@ -7607,10 +7607,10 @@ html {
     overflow-y: scroll;
     scroll-behavior: smooth; }
     html #page-container #content-wrap {
-      padding-bottom: 27rem; }
+      padding-bottom: 28rem; }
       @media screen and (max-width: 767px) {
         html #page-container #content-wrap {
-          padding-bottom: 50rem; } }
+          padding-bottom: 53rem; } }
 
 .main-wrap {
   min-height: 100%;
@@ -7848,8 +7848,8 @@ body, main {
 /* Highlight Post */
 .highlight-post {
   margin-bottom: 1rem;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0;
+  padding-right: 0;
   position: relative;
   text-decoration: none; }
   .highlight-post ul {
@@ -8152,10 +8152,10 @@ body, main {
   margin-left: 0;
   width: 105vw;
   overflow-y: scroll;
-  height: 27rem; }
+  height: 28rem; }
   @media screen and (max-width: 767px) {
     #footer {
-      height: 50rem; } }
+      height: 53rem; } }
   #footer ul {
     text-decoration: none;
     list-style: none; }
@@ -8343,7 +8343,7 @@ body, main {
   padding-top: 1rem;
   padding-inline-start: 10px !important;
   padding-inline-end: 10px; }
-  #tag #tag li {
+  #tag li {
     margin-top: 10px;
     margin-bottom: 10px; }
 
