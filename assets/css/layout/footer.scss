@@ -1,12 +1,15 @@
 #footer{
   background-color:$main-background-color;
   position: absolute;
-  height: $height-footer; //setting the footer in the bottom
   bottom: 0;
   left: 0;
   margin-left: 0;
   width: 105vw;
   overflow-y: scroll;
+  height: $height-footer; //setting the footer in the bottom
+  @media screen and (max-width:767px){
+    height:$mobile-height-footer;
+  }
 
   ul{
     text-decoration: none;

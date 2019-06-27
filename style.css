@@ -7607,7 +7607,10 @@ html {
     overflow-y: scroll;
     scroll-behavior: smooth; }
     html #page-container #content-wrap {
-      padding-bottom: 20vh; }
+      padding-bottom: 27rem; }
+      @media screen and (max-width: 767px) {
+        html #page-container #content-wrap {
+          padding-bottom: 50rem; } }
 
 .main-wrap {
   min-height: 100%;
@@ -8144,12 +8147,15 @@ body, main {
 #footer {
   background-color: #dcdcdc4d;
   position: absolute;
-  height: 20vh;
   bottom: 0;
   left: 0;
   margin-left: 0;
   width: 105vw;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  height: 27rem; }
+  @media screen and (max-width: 767px) {
+    #footer {
+      height: 50rem; } }
   #footer ul {
     text-decoration: none;
     list-style: none; }

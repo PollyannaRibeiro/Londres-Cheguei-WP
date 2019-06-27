@@ -5,7 +5,8 @@ $condensed-font: 'Roboto Condensed', sans-serif;
 $main-background-color: #dcdcdc4d;
 $parallax-img: "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80";
 
-$height-footer: 20vh;
+$height-footer: 27rem;
+$mobile-height-footer:50rem;
 
 
 @mixin font-style($size:1rem, $weight: 400, $family:$default-font){
