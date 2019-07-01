@@ -8142,6 +8142,20 @@ html,
   text-align: center;
   font-size: 0.5rem; }
 
+.video-container {
+  position: relative;
+  padding-bottom: 50.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1em; }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
 #footer {
   background-color: #dcdcdc4d;
   position: absolute;
