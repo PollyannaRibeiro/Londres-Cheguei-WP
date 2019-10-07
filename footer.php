@@ -9,6 +9,37 @@
 					
 		</div><!-- #content-wrap -->
 	<footer id="footer" class="footer mt-auto py-3" role="contentinfo">
+
+		<!-- add widgets -->
+		<?php if ( is_active_sidebar( 'londres-footer-1-row' ) ) { ?>
+				<div class="container">
+					<div class="widget-area footer-widget-area footer-sidebar-1-row" role="complementary">
+						<div class="row">
+								<?php dynamic_sidebar( 'londres-footer-1-row' ); ?>
+						</div>
+						<!-- /.row -->
+					</div>
+				</div>
+				<!-- /.container -->
+			<?php } ?>					
+
+
+			<?php if ( is_active_sidebar( 'londres-footer-2-row' ) ) { ?>
+
+				<div class="container-fluid">
+					<div class="widget-area footer-widget-area footer-sidebar-2-row" role="complementary">
+						<div class="row">
+							<div class="col-md-12 col-xs-12">
+								<?php dynamic_sidebar( 'londres-footer-2-row' ); ?>
+							</div>
+						</div>
+						<!-- /.row -->
+					</div>
+				</div>
+				<!-- /.container -->
+			<?php } ?>			
+
+
 			<div class="row" id="footer-links">
 				<div class="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center social-media">
 						<ul>

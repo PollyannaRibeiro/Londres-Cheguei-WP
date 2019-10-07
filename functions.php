@@ -46,17 +46,86 @@ add_action( 'init', 'register_my_menus' );
 
 // Register our sidebars and widgetized areas.
 
-if ( function_exists('register_sidebar') )
-  register_sidebar(array(
-    'name' => 'Widgetized Area',
-    'before_widget' => '<div class = "widgetizedArea">',
-    'after_widget' => '</div>',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>',
-  )
-);
+/**
+ * Sidebars & Widgetized Areas
+ */
+function londres_register_sidebars() {
 
-add_action( 'widgets_init', 'register_sidebar' );
+	register_sidebar( array(
+		'id' => 'homepage-sidebar',
+		'name' => esc_html__( 'Homepage Sidebar', 'Londres' ),
+		'description' => esc_html__( 'Homepage Sidebar', 'Londres' ),
+		'before_widget' => '<div class="col-md-12 col-sm-12 col-xs-12 pull-down-55 pull-down-55-xs widget-holder"><aside id="%1$s" class=" widget %2$s">',
+		'after_widget'  => '</aside></div>',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
+		));
+
+	register_sidebar( array(
+		'id' => 'londres-post-sidebar',
+		'name' => esc_html__( 'Post Sidebar', 'londres' ),
+		'description' => esc_html__( 'Sidebar on single post', 'londres' ),
+		'before_widget' => '<div class="col-md-12 col-sm-12 col-xs-12 pull-down-55 pull-down-30-xs pull-down-20-xs widget-holder"><aside id="%1$s" class=" widget %2$s">',
+		'after_widget'  => '</aside></div>',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
+	));
+
+	register_sidebar( array(
+		'id' => 'londres-page-sidebar',
+		'name' => esc_html__( 'Page Sidebar', 'londres' ),
+		'description' => esc_html__( 'Sidebar on single page', 'londres' ),
+		'before_widget' => '<div class="col-md-12 col-sm-12 col-xs-12 pull-down-55 pull-down-30-xs pull-down-20-xs widget-holder"><aside id="%1$s" class=" widget %2$s">',
+		'after_widget'  => '</aside></div>',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
+	));
+
+	register_sidebar( array(
+		'id' => 'londres-above-author-content-sidebar',
+		'name' => esc_html__( 'Above "About the Author" Sidebar', 'londres' ),
+		'description' => esc_html__( 'Above "About the Author" Sidebar Widget Area', 'londres' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
+	));
+
+	register_sidebar( array(
+		'id' => 'londres-below-content-sidebar',
+		'name' => esc_html__( 'Below Content Sidebar', 'londres' ),
+		'description' => esc_html__( 'Below content Widget Area', 'londres' ),
+		'before_widget' => '<div class="col-md-12 "><aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside></div><div class="clearfix"></div>',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
+	));
+
+	register_sidebar( array(
+		'id' => 'londres-footer-1-row',
+		'name' => esc_html__( 'Footer Sidebar 1 Row', 'londres' ),
+		'description' => esc_html__( 'Footer Widget Area', 'londres' ),
+		'before_widget' => '<div class="col-md-12"><aside id="%1$s" class="widget  %2$s">',
+		'after_widget'  => '</aside></div>',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
+	));
+
+	register_sidebar( array(
+		'id' => 'londres-footer-2-row',
+		'name' => esc_html__( 'Footer Sidebar 2 Row', 'londres' ),
+		'description' => esc_html__( 'Footer Widget Area', 'londres' ),
+		'before_widget' => '<aside id="%1$s" class="widget  %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h5 class="widget-title">',
+		'after_title'   => '</h5>',
+	));
+
+
+}
+
+add_action( 'widgets_init', 'londres_register_sidebars' );
+
 
 // Add new post type
 
@@ -157,4 +226,10 @@ add_action('wp_ajax_nopriv_loadmore', 'misha_loadmore_ajax_handler'); // wp_ajax
 
 
 // RESPONSIVE YOUTUBE EMBEDS
-// FROM: https://mediarealm.com.au/articles/wordpress-responsive-youtube-embeds/
+// FROM: https://www.joomlacandy.com/wordpress/youtube-videos-responsive
+
+add_filter('embed_oembed_html', 'wrap_embed_with_div', 10, 3);
+
+function wrap_embed_with_div($html, $url, $attr) {
+        return "<div class=\"video-container\">".$html."</div>";
+}
